@@ -1,9 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
-import linkedinIcon from './img/connect-linkedin.png';
-import githubIcon from './img/connect-github.png';
-import mailIcon from './img/connect-mail.png';
 import './custom.css';
 
 export default function HomepageSectionSeven() {
@@ -29,21 +26,21 @@ export default function HomepageSectionSeven() {
         </div>
         <div className="flex items-center justify-around gap-5 w-[80%]">
           <Image
-            src={linkedinIcon}
+            src="/images/connect-linkedin.png"
             height={40}
             width={40}
             alt="LinkenIn icon"
             className=""
           />
           <Image
-            src={githubIcon}
+            src="/images/connect-github.png"
             height={40}
             width={40}
             alt="GitHub icon"
             className=""
           />
           <Image
-            src={mailIcon}
+            src="/images/connect-mail.png"
             height={40}
             width={40}
             alt="Mail icon"

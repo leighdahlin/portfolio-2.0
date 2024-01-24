@@ -1,14 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
-import jsImage from './img/js.png';
-import cssImage from './img/css.png';
-import gitImage from './img/git.png';
-import githubImage from './img/github.png';
-import htmlImage from './img/html.png';
-import nodeImage from './img/node.png';
-import reactImage from './img/react.png';
-import tsImage from './img/ts.png';
 
 export default function HomepageSectionSix() {
   return (
@@ -21,7 +13,7 @@ export default function HomepageSectionSix() {
       <div className="grid grid-rows-4 sm:grid-rows-2 grid-flow-col gap-4 max-w-[1400px]">
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={jsImage}
+            src="/images/js.png"
             height={100}
             width={100}
             alt="JavaScript icon"
@@ -31,7 +23,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={htmlImage}
+            src="/images/html.png"
             height={100}
             width={100}
             alt="HTML icon"
@@ -41,7 +33,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={cssImage}
+            src="/images/css.png"
             height={100}
             width={100}
             alt="CSS icon"
@@ -51,7 +43,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={githubImage}
+            src="/images/github.png"
             height={100}
             width={100}
             alt="GitHub icon"
@@ -61,7 +53,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={tsImage}
+            src="/images/ts.png"
             height={100}
             width={100}
             alt="TypeScript icon"
@@ -71,7 +63,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={reactImage}
+            src="/images/react.png"
             height={100}
             width={100}
             alt="React icon"
@@ -81,7 +73,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={nodeImage}
+            src="/images/node.png"
             height={100}
             width={100}
             alt="Node icon"
@@ -91,7 +83,7 @@ export default function HomepageSectionSix() {
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
           <Image
-            src={gitImage}
+            src="/images/git.png"
             height={100}
             width={100}
             alt="Git icon"

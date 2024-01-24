@@ -1,5 +1,4 @@
 import React from 'react';
-import backgroundImage from './img/homepage-min.jpg';
 import { shrikhand } from '@/app/fonts';
 import Image from 'next/image';
 import ContactButton from '../ContactButton';
@@ -8,7 +7,7 @@ export default function HomepageSectionEight() {
   return (
     <div className="h-[calc(100vh-60px)] relative text-off-white">
       <Image
-        src={backgroundImage}
+        src="/images/homepage-min.jpg"
         alt="Picture of Leigh Dahlin"
         fill={true}
         className="object-cover object-center"

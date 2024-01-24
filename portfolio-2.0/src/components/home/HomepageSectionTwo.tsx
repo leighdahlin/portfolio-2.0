@@ -2,20 +2,14 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
-import devCircle from './img/1-dev-circle.png';
-import devImage from './img/1-dev.png';
-import designCircle from './img/2-des-circle.png';
-import designImage from './img/2-des.png';
-import consultCircle from './img/3-con-circle.png';
-import consultImage from './img/3-con.png';
 
 export default function HomepageSectionTwo() {
   const [selectedService, setSelectedService] = useState<null | number>(null);
   const services = [
     {
       label: 'Development',
-      circleImage: devCircle,
-      wideImage: devImage,
+      circleImage: '/images/1-dev-circle.png',
+      wideImage: '/images/1-dev.png',
       alt: 'laptop with code on the screen',
       title: 'Custom Website Development',
       description:
@@ -23,8 +17,8 @@ export default function HomepageSectionTwo() {
     },
     {
       label: 'Design',
-      circleImage: designCircle,
-      wideImage: designImage,
+      circleImage: '/images/2-des-circle.png',
+      wideImage: '/images/2-des.png',
       alt: 'laptop with design software on the screen',
       title: 'User Interface Design',
       description:
@@ -32,8 +26,8 @@ export default function HomepageSectionTwo() {
     },
     {
       label: 'Consultation',
-      circleImage: consultCircle,
-      wideImage: consultImage,
+      circleImage: '/images/3-con-circle.png',
+      wideImage: '/images/3-con.png',
       alt: 'two people in a conference room in a discussion',
       title: 'Website Consultation',
       description:

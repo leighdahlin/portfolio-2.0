@@ -1,7 +1,6 @@
 import React from 'react';
 import { shrikhand } from '@/app/fonts';
 import Image from 'next/image';
-import leighImage from './img/meet-leigh.png';
 
 export default function HomepageSectionOne() {
   return (
@@ -25,7 +24,7 @@ export default function HomepageSectionOne() {
             </p>
           </div>
           <Image
-            src={leighImage}
+            src="/images/meet-leigh.png"
             alt="Picture of Leigh Dahlin"
             priority={true}
             className="max-h-[80%] max-w-[33%] w-auto md:self-end"
