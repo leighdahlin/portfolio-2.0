@@ -1,11 +1,14 @@
+'use client';
+
 import React from 'react';
-import type { Metadata } from 'next';
+import { HelmetProvider } from 'react-helmet-async';
+// import type { Metadata } from 'next';
 import './globals.css';
 
-export const metadata: Metadata = {
-  title: 'Leigh Dahlin',
-  description: 'Website Freelancer',
-};
+// export const metadata: Metadata = {
+//   title: 'Leigh Dahlin',
+//   description: 'Website Freelancer',
+// };
 
 export default function RootLayout({
   children,
@@ -13,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <HelmetProvider>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </HelmetProvider>
   );
 }
