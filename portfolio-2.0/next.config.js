@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**netlify.app',
-        port: '',
-      },
-    ],
+    domains: ['extraordinary-cranachan-fe7e16.netlify.app'],
   },
 };
 
