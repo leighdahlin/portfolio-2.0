@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
 import './custom.css';
 
@@ -25,21 +25,21 @@ export default function HomepageSectionSeven() {
           </p>
         </div>
         <div className="flex items-center justify-around gap-5 w-[80%]">
-          <Image
+          <img
             src="/images/connect-linkedin.png"
             height={40}
             width={40}
             alt="LinkenIn icon"
             className=""
           />
-          <Image
+          <img
             src="/images/connect-github.png"
             height={40}
             width={40}
             alt="GitHub icon"
             className=""
           />
-          <Image
+          <img
             src="/images/connect-mail.png"
             height={40}
             width={40}

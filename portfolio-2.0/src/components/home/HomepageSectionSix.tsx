@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import img from 'next/img';
 import { shrikhand } from '@/app/fonts';
 
 export default function HomepageSectionSix() {
@@ -12,7 +12,7 @@ export default function HomepageSectionSix() {
       </div>
       <div className="grid grid-rows-4 sm:grid-rows-2 grid-flow-col gap-4 max-w-[1400px]">
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/js.png"
             height={100}
             width={100}
@@ -22,7 +22,7 @@ export default function HomepageSectionSix() {
           <p>JavaScript</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/html.png"
             height={100}
             width={100}
@@ -32,7 +32,7 @@ export default function HomepageSectionSix() {
           <p>HTML</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/css.png"
             height={100}
             width={100}
@@ -42,7 +42,7 @@ export default function HomepageSectionSix() {
           <p>CSS</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/github.png"
             height={100}
             width={100}
@@ -52,7 +52,7 @@ export default function HomepageSectionSix() {
           <p>Github</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/ts.png"
             height={100}
             width={100}
@@ -62,7 +62,7 @@ export default function HomepageSectionSix() {
           <p>TypeScript</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/react.png"
             height={100}
             width={100}
@@ -72,7 +72,7 @@ export default function HomepageSectionSix() {
           <p>React</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/node.png"
             height={100}
             width={100}
@@ -82,7 +82,7 @@ export default function HomepageSectionSix() {
           <p>Node</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 text-sm">
-          <Image
+          <img
             src="/images/git.png"
             height={100}
             width={100}

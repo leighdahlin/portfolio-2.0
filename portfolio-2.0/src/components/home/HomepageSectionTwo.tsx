@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
 
 export default function HomepageSectionTwo() {
@@ -71,7 +71,7 @@ export default function HomepageSectionTwo() {
                   }`}
                 >
                   <div className="flex items-center gap-5">
-                    <Image
+                    <img
                       src={s.circleImage}
                       alt={s.alt}
                       width={200}
@@ -107,7 +107,7 @@ export default function HomepageSectionTwo() {
                       : 'hidden h-0 w-0'
                   }`}
                 >
-                  <Image
+                  <img
                     src={s.wideImage}
                     alt={s.alt}
                     width={498}

@@ -1,16 +1,15 @@
 import React from 'react';
 import { shrikhand } from '@/app/fonts';
-import Image from 'next/image';
+// import Image from 'next/image';
 import ContactButton from '../ContactButton';
 
 export default function HomepageSectionFive() {
   return (
     <div className="h-[calc(100vh-60px)] relative text-off-white">
-      <Image
+      <img
         src="/images/computer.jpg"
         alt="Picture of Leigh Dahlin"
-        fill={true}
-        className="object-cover object-center"
+        className="w-full h-full object-cover object-center"
       />
       <div className="absolute top-0 lg:top-[30%] w-full p-2 sm:p-5 lg:pl-[4rem]">
         <div className={shrikhand.className}>
