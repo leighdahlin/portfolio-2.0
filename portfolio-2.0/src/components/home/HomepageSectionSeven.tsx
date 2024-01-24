@@ -1,7 +1,7 @@
 import React from 'react';
 // import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
-import './custom.css';
+import '../../app/globals.css';
 
 export default function HomepageSectionSeven() {
   return (
