@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.main--extraordinary-cranachan-fe7e16.netlify.app',
+        hostname: '**netlify.app',
         port: '',
       },
     ],
