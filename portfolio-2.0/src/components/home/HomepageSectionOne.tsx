@@ -1,6 +1,6 @@
 import React from 'react';
 import { shrikhand } from '@/app/fonts';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function HomepageSectionOne() {
   return (
