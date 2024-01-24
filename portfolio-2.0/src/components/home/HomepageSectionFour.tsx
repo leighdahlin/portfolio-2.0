@@ -1,6 +1,6 @@
 'use client';
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+// import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import roadMapBackground from './img/road-map.png';
 import { shrikhand } from '@/app/fonts';
