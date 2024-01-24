@@ -23,10 +23,9 @@ export default function HomepageSectionOne() {
               skilled in crafting visually appealing and user-friendly websites.
             </p>
           </div>
-          <Image
+          <img
             src="/images/meet-leigh.png"
             alt="Picture of Leigh Dahlin"
-            priority={true}
             className="max-h-[80%] max-w-[33%] w-auto md:self-end"
             width={300}
             height={600}
