@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import './globals.css';
 
 export default function RootLayout({
