@@ -12,18 +12,18 @@ export default function RootLayout({
   return (
     <HelmetProvider>
       <head>
-        <title>Leigh Dahlin - Freelance Website Developer and Designer</title>
+        <title>Leigh Dahlin - Website Developer and Designer</title>
         <meta
           name="description"
-          content="Leigh Dahlin is a freelance website developer or design that can assist you in creating or maintaining your website."
+          content="Leigh Dahlin is a website developer or design that can assist you in creating or maintaining your website."
         />
         <meta
           property="og:title"
-          content="Leigh Dahlin - Freelance Website Developer and Designer"
+          content="Leigh Dahlin - Website Developer and Designer"
         />
         <meta
           property="og:description"
-          content="Leigh Dahlin is a freelance website developer or design that can assist you in creating or maintaining your website."
+          content="Leigh Dahlin is a website developer or design that can assist you in creating or maintaining your website."
         />
         <meta
           property="og:image"
