@@ -25,27 +25,33 @@ export default function HomepageSectionSeven() {
           </p>
         </div>
         <div className="flex items-center justify-around gap-5 w-[80%]">
-          <img
-            src="/images/connect-linkedin.png"
-            height={40}
-            width={40}
-            alt="LinkenIn icon"
-            className=""
-          />
-          <img
-            src="/images/connect-github.png"
-            height={40}
-            width={40}
-            alt="GitHub icon"
-            className=""
-          />
-          <img
-            src="/images/connect-mail.png"
-            height={40}
-            width={40}
-            alt="Mail icon"
-            className=""
-          />
+          <a href="https://www.linkedin.com/in/leighdahlin/" target="_blanks">
+            <img
+              src="/images/connect-linkedin.png"
+              height={40}
+              width={40}
+              alt="LinkenIn icon"
+              className=""
+            />
+          </a>
+          <a href="https://github.com/leighdahlin" target="_blanks">
+            <img
+              src="/images/connect-github.png"
+              height={40}
+              width={40}
+              alt="GitHub icon"
+              className=""
+            />
+          </a>
+          <a href="mailto:leigh@leighdahlin.com">
+            <img
+              src="/images/connect-mail.png"
+              height={40}
+              width={40}
+              alt="Mail icon"
+              className=""
+            />
+          </a>
         </div>
       </div>
       <div className="flex flex-col md:w-[50%] p-5">
