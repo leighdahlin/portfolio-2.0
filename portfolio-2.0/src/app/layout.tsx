@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
-import { Helmet } from 'react-helmet-async';
 import './globals.css';
 
 export default function RootLayout({
@@ -12,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <HelmetProvider>
-      <Helmet>
+      <head>
         <title>Leigh Dahlin - Freelance Website Developer and Designer</title>
         <meta
           name="description"
@@ -39,7 +38,7 @@ export default function RootLayout({
           name="keywords"
           content="Leigh Dahlin, Freelancer, Developer, Website Developer, Designer, Website Designer, Custom Website"
         ></meta>
-      </Helmet>
+      </head>
       <html lang="en">
         <body>{children}</body>
       </html>
