@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-// import Image from 'next/image';
 import { shrikhand } from '@/app/fonts';
 
 export default function HomepageSectionTwo() {
@@ -13,7 +12,7 @@ export default function HomepageSectionTwo() {
       alt: 'laptop with code on the screen',
       title: 'Custom Website Development',
       description:
-        'Specializing in custom website development, I bring a meticulous approach to crafting unique digital experiences tailored to meet the specific needs of each client. Every line of code is carefully curated, ensuring not just functionality but a seamless blend of user-centric design and technical excellence. With a commitment to professionalism and precision, I transform concepts into sophisticated, responsive websites that elevate brands and engage audiences effectively.',
+        'Specializing in custom website development, I bring a meticulous approach to crafting unique digital experiences tailored to meet the specific needs of each client.',
     },
     {
       label: 'Design',
@@ -22,7 +21,7 @@ export default function HomepageSectionTwo() {
       alt: 'laptop with design software on the screen',
       title: 'User Interface Design',
       description:
-        'As a seasoned web developer, my proficiency extends to creating intuitive and visually compelling user interfaces that prioritize seamless user interactions. Employing a user-centered design philosophy, I meticulously refine each element, ensuring an optimal balance between aesthetics and functionality. Through a keen understanding of user behavior, I strive to deliver interfaces that not only captivate but enhance the overall user experience, fostering engagement and satisfaction.',
+        'As a seasoned web developer, my proficiency extends to creating intuitive and visually compelling user interfaces that prioritize seamless user interactions.',
     },
     {
       label: 'Consultation',
@@ -31,15 +30,18 @@ export default function HomepageSectionTwo() {
       alt: 'two people in a conference room in a discussion',
       title: 'Website Consultation',
       description:
-        "In my consulting role, I provide strategic insights and expertise to elevate a client's website, focusing on enhancing its overall performance and user experience. Through comprehensive analysis, I identify opportunities for improvement, offering tailored recommendations to optimize functionality, design, and user engagement. By collaborating closely with clients, I aim to empower them with actionable insights, guiding the evolution of their websites to align seamlessly with their business goals and user expectations.",
+        "In my consulting role, I provide strategic insights and expertise to elevate a client's website, focusing on enhancing its overall performance and user experience.",
     },
   ];
   return (
-    <div id="services" className="bg-white h-full text-black scroll-mt-[60px]">
-      <div className="h-full flex flex-col justify-center items-center p-5 md:p-10 max-w-[1400px]">
+    <div
+      id="services"
+      className="bg-white h-full text-black scroll-mt-[60px] min-h-[calc(100vh-60px)]"
+    >
+      <div className="min-h-[calc(100vh-60px)] flex flex-col items-center p-5 md:p-10 max-w-[1400px]">
         <div className="w-full flex flex-col md:flex-row items-center justify-center md:justify-start pb-2 md:pb-5">
           <div className={shrikhand.className}>
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl text-dark-teal md:px-5">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl text-dark-teal pr-5">
               Services
             </h1>
           </div>
@@ -51,8 +53,8 @@ export default function HomepageSectionTwo() {
             (select one to learn more)
           </p>
         </div>
-        <div className="md:flex md:justify-evenly w-full md:h-full md:gap-5">
-          <div className="pb-10 flex flex-col items-start justify-center mx-auto gap-5 max-w-[450px] md:max-w-[350px] lg:max-w-[400px]">
+        <div className="md:flex md:justify-evenly items-center w-full flex-1 md:gap-5">
+          <div className="flex flex-col items-start justify-center mx-auto gap-5 max-w-[450px] md:max-w-[350px] lg:max-w-[400px]">
             {services.map((s, i) => (
               <button
                 key={s.label}
@@ -76,10 +78,12 @@ export default function HomepageSectionTwo() {
                       alt={s.alt}
                       width={200}
                       height={200}
-                      className="w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]"
+                      className="w-[100px] h-[100px] lg:w-[125px] lg:h-[125px]"
                     />
                     <h2
-                      className={`${selectedService === i ? 'font-bold' : ''}`}
+                      className={`${
+                        selectedService === i ? 'font-bold text-lg' : 'text-lg'
+                      }`}
                     >
                       {s.label}
                     </h2>
@@ -103,7 +107,7 @@ export default function HomepageSectionTwo() {
                   key={s.label}
                   className={`${
                     selectedService === i
-                      ? 'visible flex flex-col gap-5'
+                      ? 'visible flex flex-col gap-5 p-5'
                       : 'hidden h-0 w-0'
                   }`}
                 >
@@ -114,7 +118,7 @@ export default function HomepageSectionTwo() {
                     height={286}
                     className="w-full"
                   />
-                  <p className="text-justify">{s.description}</p>
+                  <p className="text-left">{s.description}</p>
                 </div>
               ))}
             </div>
