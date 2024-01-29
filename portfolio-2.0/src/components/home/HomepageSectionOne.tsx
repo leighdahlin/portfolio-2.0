@@ -5,11 +5,11 @@ import { shrikhand } from '@/app/fonts';
 export default function HomepageSectionOne() {
   return (
     <div className="bg-off-white">
-      <div className="h-full md:h-[calc(100vh-60px)] max-h-full pt-[40px] px-[20px] max-w-[1400px] bg-off-white">
-        <div className="h-full w-full flex flex-col justify-between items-center gap-[10px] text-center md:flex-row md:justify-evenly md:text-left">
+      <div className="h-[calc(100vh-60px)] max-h-full pt-[40px] px-[20px] max-w-[1400px] bg-off-white">
+        <div className="h-full w-full flex flex-col justify-between items-center gap-[25px] text-center md:flex-row md:justify-evenly md:text-left">
           <div className="flex flex-col justify-center">
             <div className={shrikhand.className}>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-[20px] text-dark-teal">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-[30px] text-dark-teal">
                 Hello, I&apos;m Leigh.
               </h1>
             </div>
@@ -26,7 +26,7 @@ export default function HomepageSectionOne() {
           <img
             src="/images/meet-leigh.png"
             alt="Picture of Leigh Dahlin"
-            className="max-h-[80%] max-w-[33%] w-auto md:self-end"
+            className="max-w-[175px] sm:max-w-[200px] md:max-w-[250px] w-auto md:self-end"
             width={300}
             height={600}
           />
