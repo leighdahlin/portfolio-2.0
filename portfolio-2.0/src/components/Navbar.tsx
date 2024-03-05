@@ -71,7 +71,7 @@ export default function Navbar() {
     if (navOpen) {
       const timeout = setTimeout(() => {
         setShouldAnimate(true);
-      }, 100); // Adjust the delay time as needed
+      }, 300); // Adjust the delay time as needed
 
       // Clear the timeout when the component unmounts
       return () => clearTimeout(timeout);
@@ -80,7 +80,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-dark-blue flex justify-center">
-      <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[4.75rem] mx-auto px-[0.875rem] md:mx-[1.5625rem]">
+      <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[4.75rem] mx-auto px-[0.875rem] md:px-[1.5625rem]">
         <Link href="/">
           <Image
             src={logoDark}
@@ -200,11 +200,11 @@ export default function Navbar() {
         // <div className="flex-1 relative bg-off-white dark:bg-dark-blue h-full w-full">
         <div
           id="mobile-nav"
-          className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white dark:bg-dark-blue translate-x-full ${
+          className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white dark:bg-dark-blue ${
             shouldAnimate ? 'translate-x-0' : 'translate-x-full'
           } `}
         >
-          <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative min-h-[3.125rem] mx-auto px-[0.875rem] md:mx-[1.5625rem]">
+          <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative min-h-[3.125rem] mx-auto px-[0.875rem] md:px-[1.5625rem]">
             <Link
               href="/"
               onClick={() => {
@@ -270,6 +270,33 @@ export default function Navbar() {
                     {l.displayName}
                   </a>
                 ))} */}
+                <button
+                  onClick={() => {
+                    setNavOpen(!navOpen);
+                    scrollToSection('#about');
+                  }}
+                  className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey text-left"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => {
+                    setNavOpen(!navOpen);
+                    scrollToSection('#whattoexpect');
+                  }}
+                  className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey text-left"
+                >
+                  What to Expect
+                </button>
+                <button
+                  onClick={() => {
+                    setNavOpen(!navOpen);
+                    scrollToSection('#faq');
+                  }}
+                  className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey text-left"
+                >
+                  FAQs
+                </button>
                 <div
                   data-id="dark mode toggle"
                   className="flex justify-center items-center gap-[1rem] p-[1rem]"
@@ -296,7 +323,10 @@ export default function Navbar() {
                   </label>
                   <p className="text-black dark:text-off-white">Dark Mode</p>
                 </div>
-                <ContactButton color="gold" className="m-[1rem]" />
+                <ContactButton
+                  color="gold"
+                  className="m-[0.875rem] md:m-[1.5625rem]"
+                />
               </div>
             </div>
           </div>
