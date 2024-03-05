@@ -4,13 +4,24 @@ import React from 'react';
 import GlobalLayout from '@/components/GlobalLayout';
 import Home from '@/components/home/Homepage';
 import { Helmet } from 'react-helmet-async';
+import Script from 'next/script';
+import Link from 'next/link';
 
 export default function Homepage() {
   return (
     <>
       <GlobalLayout>
+        <Link
+          rel="stylesheet"
+          href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+        <Script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></Script>
+        {/* <Link rel="stylesheet" href="/flickity/flickity.css" media="screen" /> */}
+        {/* <Link rel="stylesheet" href="/flickity.min.css" media="screen" /> */}
+
+        {/* <Script src="/flickity/flickity.pkgd.min.js"></Script> */}
         <Helmet>
-          <script type="text/javascript">
+          {/* <script type="text/javascript">
             {`
             (function(a,s,n,i,p,e,t) {
               a.INDY=a.INDY || {};
@@ -22,11 +33,9 @@ export default function Homepage() {
               t=s.getElementsByTagName(n)[0];t.parentNode.insertBefore(e,t);
             })(window,document,"script","https://weareindy.com/app","/static/js/forms-embed.js");
           `}
-          </script>
+          </script> */}
         </Helmet>
-        <main>
-          <Home />
-        </main>
+        <Home />
       </GlobalLayout>
     </>
   );

@@ -1,24 +1,22 @@
 import React from 'react';
-import HomepageSectionOne from './HomepageSectionOne';
-import HomepageSectionTwo from './HomepageSectionTwo';
-// import HomepageSectionThree from './HomepageSectionThree';
-// import HomepageSectionFour from './HomepageSectionFour';
-import HomepageSectionFive from './HomepageSectionFive';
-import HomepageSectionSix from './HomepageSectionSix';
-import HomepageSectionSeven from './HomepageSectionSeven';
-import HomepageSectionEight from './HomepageSectionEight';
+import HomeVideo from './HomeVideo';
+import AboutBlocks from './AboutBlocks';
+import DigitalIdentityBlock from './DigitalIdentityBlock';
+import EmpowerJourneyBlock from './DigitalJourneyBlock';
+import WhatToExpect from './WhatToExpect';
+import Faq from './Faq';
+import FormSection from './Form';
 
 export default function Home() {
   return (
-    <>
-      <HomepageSectionOne />
-      <HomepageSectionTwo />
-      {/* <HomepageSectionThree />
-      <HomepageSectionFour /> */}
-      <HomepageSectionFive />
-      <HomepageSectionSix />
-      <HomepageSectionEight />
-      <HomepageSectionSeven />
-    </>
+    <div className="block bg-off-white dark:bg-dark-blue">
+      <HomeVideo />
+      <AboutBlocks />
+      <DigitalIdentityBlock />
+      <WhatToExpect />
+      <Faq />
+      <EmpowerJourneyBlock />
+      <FormSection />
+    </div>
   );
 }

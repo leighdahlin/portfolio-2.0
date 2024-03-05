@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -19,6 +20,10 @@ const config: Config = {
       transparent: 'transparent',
       black: '#000000',
       white: '#FFFFFF',
+      golden: '#D8981F',
+      'hover-golden': 'rgba(216, 152, 31, 0.75)',
+      grey: '#d3d5d7',
+      bluegray: '#839DA9',
     },
   },
   plugins: [],
