@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useIsMobile from '@/hooks/useIsMobile';
 import { AboutCardInfoType } from './AboutBlocks';
+import Image from 'next/image';
 
 interface AboutCardProps {
   aboutCardInfo: AboutCardInfoType;
@@ -20,7 +21,7 @@ export default function AboutCard({ aboutCardInfo }: AboutCardProps) {
       className="flex flex-col justify-between h-full flex-grow mb-[1rem] w-full md:w-1/3"
     >
       <div className="flex flex-col text-black dark:text-off-white">
-        <img
+        <Image
           src={aboutCardInfo.image}
           alt={aboutCardInfo.imageAlt}
           className="h-[400px] sm:h-[600px] object-cover object-[center 35%]"

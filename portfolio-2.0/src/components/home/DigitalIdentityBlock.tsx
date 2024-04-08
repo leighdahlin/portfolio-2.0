@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function DigitalIdentityBlock() {
   const scrollToFaq = () => {
@@ -12,7 +13,7 @@ export default function DigitalIdentityBlock() {
   return (
     <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
-        <img
+        <Image
           src="/images/home/digital-identity.png"
           alt="Digial identiy represented as a woman with icon in front on her for websites"
           className="w-full object-cover"

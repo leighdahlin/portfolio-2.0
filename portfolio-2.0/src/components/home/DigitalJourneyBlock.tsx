@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function EmpowerJourneyBlock() {
   const scrollToContact = () => {
@@ -12,7 +13,7 @@ export default function EmpowerJourneyBlock() {
   return (
     <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center mt-[1rem]">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
-        <img
+        <Image
           src="/images/home/digital-journey.png"
           alt="Man walking on beach next to mountains"
           className="w-full object-cover"

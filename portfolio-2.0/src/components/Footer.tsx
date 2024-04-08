@@ -41,14 +41,14 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/leighdahlin/"
                   target="_blank"
                 >
-                  <img
+                  <Image
                     src="images/footer-linkedin.png"
                     height={30}
                     width={30}
                     alt="LinkenIn icon"
                     className="dark:hidden"
                   />
-                  <img
+                  <Image
                     src="images/footer-linkedin-light.png"
                     height={30}
                     width={30}
@@ -57,14 +57,14 @@ export default function Footer() {
                   />
                 </a>
                 <a href="https://github.com/leighdahlin" target="_blank">
-                  <img
+                  <Image
                     src="images/footer-github.png"
                     height={35}
                     width={35}
                     alt="Logo"
                     className="dark:hidden"
                   />
-                  <img
+                  <Image
                     src="images/footer-github-light.png"
                     height={35}
                     width={35}
@@ -73,14 +73,14 @@ export default function Footer() {
                   />
                 </a>
                 <a href="mailto:leigh@leighdahlin.com">
-                  <img
+                  <Image
                     src="images/footer-mail.png"
                     height={35}
                     width={35}
                     alt="Mail icon"
                     className="dark:hidden"
                   />
-                  <img
+                  <Image
                     src="images/footer-mail-light.png"
                     height={35}
                     width={35}

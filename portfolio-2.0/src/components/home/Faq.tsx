@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function Faq() {
   const [question, setSelectedQuestion] = useState<null | number>(null);
@@ -98,14 +99,14 @@ export default function Faq() {
                   <p className="font-semibold text-left text-black dark:text-off-white">
                     {q.question}
                   </p>
-                  <img
+                  <Image
                     src="/images/home/faq-arrow.png"
                     alt="arrow"
                     className={`dark:hidden h-[8px] w-[13.3px] transition duration-500 ${
                       i === question ? 'rotate-180' : 'group-hover:rotate-90'
                     }`}
                   />
-                  <img
+                  <Image
                     src="/images/home/faq-arrow-light.png"
                     alt="arrow"
                     className={`hidden dark:block h-[8px] w-[13.3px] transition duration-500 ${

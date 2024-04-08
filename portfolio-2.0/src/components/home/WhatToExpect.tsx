@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function WhatToExpect() {
   //progress bar example
@@ -62,7 +63,7 @@ export default function WhatToExpect() {
               className="carousel-cell w-/2 mr-[2rem]"
             >
               <div className="group relative overflow-hidden">
-                <img
+                <Image
                   data-flickity-lazyload
                   src={s.image}
                   alt={s.imageAlt}
