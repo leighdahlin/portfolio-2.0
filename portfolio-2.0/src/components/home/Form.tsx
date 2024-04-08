@@ -68,11 +68,6 @@ export default function FormSection() {
             alt="Leigh holding a cup of coffee"
             className="hidden xl:block lg:w-1/3 xl:w-1/2 object-cover py-[2rem]"
           />
-          {/* <img
-            src="/images/home/contact-mobile.png"
-            alt="Leigh holding a cup of coffee"
-            className="lg:hidden max-h-[700px] object-cover pt-[2rem] w-full object-cover md:max-h-[500px] object-top"
-          /> */}
           <div
             id="contact"
             className="scroll-mt-[70px] w-full xl:w-1/2 flex justify-center pt-[2rem] xl:pt-[1rem]"

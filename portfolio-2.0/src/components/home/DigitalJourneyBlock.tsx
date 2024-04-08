@@ -10,7 +10,7 @@ export default function EmpowerJourneyBlock() {
   };
 
   return (
-    <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center my-[2rem]">
+    <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center mt-[1rem]">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <img
           src="/images/home/digital-journey.png"
@@ -21,8 +21,9 @@ export default function EmpowerJourneyBlock() {
           Empowering Your Online Journey.
         </h2>
         <p className="mt-[0.5rem] text-black dark:text-off-white">
-          Your website should be as intersting and unique as your business.
-          Don&apos;t settle for anything less.
+          Your website should reflect the creativity and uniqueness of your
+          business. Don&apos;t settle for anything less than a captivating and
+          distinctive online presence.
         </p>
         <button
           onClick={() => {

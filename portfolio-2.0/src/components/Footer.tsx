@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 import React from 'react';
 import scrollToSection from '@/utils/scrollToSection';
@@ -10,14 +11,14 @@ export default function Footer() {
       <div className="flex items-center justify-center">
         <div className="flex flex-col-reverse sm:flex-row items-center md:items-stretch justify-around gap-[2rem] md:gap-[0rem] md:justify-stretch w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem] py-[4rem]">
           <div className="md:w-[25%]">
-            <img
+            <Image
               src="images/footer-logo.png"
               height={200}
               width={200}
               alt="LinkenIn icon"
               className="dark:hidden"
             />
-            <img
+            <Image
               src="images/footer-logo-dark.png"
               height={200}
               width={200}
@@ -27,12 +28,6 @@ export default function Footer() {
           </div>
           <div className="flex flex-col-reverse gap-[2rem] md:gap-[0rem] md:w-[75%] md:flex-row">
             <div className="flex flex-col items-center md:w-2/3">
-              {/* <a
-                href="/contact/"
-                className="p-[1rem] bg-golden text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-hover-golden w-fit min-w-[175px]"
-              >
-                Get Custom Quote
-              </a> */}
               <button
                 onClick={() => {
                   scrollToSection('#contact');
@@ -98,7 +93,6 @@ export default function Footer() {
             <div className="flex justify-end font-semibold md:w-1/3 gap-[2rem] text-dark-blue dark:text-off-white">
               <ul className="flex flex-col flex-wrap gap-[1rem]">
                 <li className="group relative w-fit">
-                  {/* <a href="/contact/">Contact</a> */}
                   <button
                     onClick={() => {
                       scrollToSection('#about');
@@ -109,7 +103,6 @@ export default function Footer() {
                   <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
                 </li>
                 <li className="group relative w-fit">
-                  {/* <a href="/experience/">Experience</a> */}
                   <button
                     onClick={() => {
                       scrollToSection('#faq');
@@ -123,7 +116,6 @@ export default function Footer() {
               </ul>
               <ul className="flex flex-col flex-wrap gap-[1rem]">
                 <li className="group relative w-fit">
-                  {/* <a href="/services/">Services</a> */}
                   <button
                     onClick={() => {
                       scrollToSection('#whattoexpect');
@@ -135,7 +127,6 @@ export default function Footer() {
                   <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
                 </li>
                 <li className="group relative w-fit">
-                  {/* <a href="/projects/">Projects</a> */}
                   <button
                     onClick={() => {
                       scrollToSection('#contact');

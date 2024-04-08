@@ -11,7 +11,7 @@ import scrollToSection from '@/utils/scrollToSection';
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const isMobile = useIsMobile(1024);
+  const isMobile = useIsMobile(768);
   const [mounted, setMounted] = useState(false);
   const [shouldAnimate, setShouldAnimate] = useState(false);
 

@@ -10,7 +10,7 @@ export default function DigitalIdentityBlock() {
   };
 
   return (
-    <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center my-[2rem]">
+    <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <img
           src="/images/home/digital-identity.png"
@@ -21,8 +21,9 @@ export default function DigitalIdentityBlock() {
           Crafting Your Digital Identity.
         </h2>
         <p className="mt-[0.5rem] text-black dark:text-off-white">
-          Why settle for an out-of-the-box website that can&apos;t grow with
-          you? Choose a website that’s flexible and adaptable.
+          Why settle for an out-of-the-box website that can&apos;t evolve with
+          your needs? Choose a website that offers flexibility and adaptability,
+          ensuring it grows seamlessly alongside your business.
         </p>
         <button
           onClick={() => {

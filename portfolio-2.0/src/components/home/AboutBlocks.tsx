@@ -16,7 +16,7 @@ export default function AboutBlocks() {
       mobileTitle: 'Professional Background.',
       webTitle: 'Professional.',
       description:
-        'Leigh is experienced website developer with a passion for user interface design and creating unique user experiences.',
+        'Leigh brings a wealth of experience to the table as a professional, having spent 7 years as a Certified Public Accountant before transitioning to development. With dedication to crafting exceptional user experiences, Leigh is committed to delivering top-notch results for every project.',
       buttonText: 'View Experience',
       image: '/images/home/professional.png',
       imageAlt:
@@ -26,16 +26,16 @@ export default function AboutBlocks() {
       mobileTitle: 'Diverse Set of Skills.',
       webTitle: 'Skilled.',
       description:
-        'While she specializes in React and Jamstack applications, Leigh’s always learning new skills and technologies.',
+        'Leigh brings a diverse set of skills to the table, with a focus on React and Jamstack applications. Committed to ongoing growth, she stays at the forefront of industry trends, incorporating technologies like TypeScript while continually expanding her knowledge base.',
       buttonText: 'View Skills',
       image: '/images/home/skilled.png',
       imageAlt: 'Leigh Dahlin leaning against a blue door',
     },
     {
-      mobileTitle: 'Experienced in Project Management.',
-      webTitle: 'Experienced.',
+      mobileTitle: 'Versatile Experience.',
+      webTitle: 'Versatile.',
       description:
-        'She enjoys working on a variety of projects and believes that no project is too big or small, Leigh has a wide variety of projects.',
+        'Leigh thrives on the diversity of projects, believing that no endeavor is too big or small. With a versatile experience spanning various industries and challenges, she approaches each project with dedication and expertise, ensuring exceptional results every time as well as client satisfaction.',
       buttonText: 'View Projects',
       image: '/images/home/experienced.png',
       imageAlt: 'Leigh Dahlin typing on a laptop',

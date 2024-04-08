@@ -17,7 +17,7 @@ export default function AboutCard({ aboutCardInfo }: AboutCardProps) {
   return (
     <div
       data-id="about-card"
-      className="flex flex-col justify-between h-full flex-grow mb-[1rem]"
+      className="flex flex-col justify-between h-full flex-grow mb-[1rem] w-full md:w-1/3"
     >
       <div className="flex flex-col text-black dark:text-off-white">
         <img

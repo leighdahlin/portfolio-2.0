@@ -15,7 +15,7 @@ export default function RootLayout({
         <title>Leigh Dahlin - Website Developer and Designer</title>
         <meta
           name="description"
-          content="Leigh Dahlin is a website developer or design that can assist you in creating or maintaining your website."
+          content="Unlock the potential of your online presence with Leigh Dahlin's website development and design services. Elevate your brand with tailored solutions crafted to captivate and convert. Let's bring your vision to life online."
         />
         <meta
           property="og:title"
@@ -23,7 +23,7 @@ export default function RootLayout({
         />
         <meta
           property="og:description"
-          content="Leigh Dahlin is a website developer or design that can assist you in creating or maintaining your website."
+          content="Unlock the potential of your online presence with Leigh Dahlin's website development and design services. Elevate your brand with tailored solutions crafted to captivate and convert. Let's bring your vision to life online."
         />
         <meta
           property="og:image"

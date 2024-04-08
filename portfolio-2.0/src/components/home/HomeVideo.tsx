@@ -3,7 +3,6 @@ import React from 'react';
 export default function HomeVideo() {
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
-    console.log(contactSection);
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -18,15 +17,15 @@ export default function HomeVideo() {
             className="block box-border text-black dark:text-off-white mx-[0.625rem] md:mx-[0rem]"
           >
             <div className="block box-border bg-off-white dark:bg-dark-blue w-full md:absolute md:top-[9.4375rem] md:w-[16rem] md:z-20">
-              <h1 className="uppercase font-semibold leading-8 text-[1.5rem] pt-[1rem] md:pt-[2rem] md:pr-[1rem] tracking-[.1rem] text-center md:text-left">
+              <h1 className="uppercase font-semibold leading-8 text-[1.5rem] pt-[2.5rem] md:pt-[2rem] md:pr-[1rem] tracking-[.1rem] text-center md:text-left max-w-[240px] mx-auto">
                 Your vision, My expertise
               </h1>
-              <p className="pt-[1.5rem] md:pr-[1rem] pb-[1rem] md:pb-[2rem] text-center md:text-left">
+              <p className="pt-[0.5rem] md:pr-[1rem] pb-[1rem] md:pb-[2rem] text-center md:text-left">
                 Personalized websites{' '}
                 <span className="text-golden font-semibold">
                   tailored to you
                 </span>{' '}
-                and your business‘ needs.
+                and your business&apos; needs.
               </p>
             </div>
           </div>

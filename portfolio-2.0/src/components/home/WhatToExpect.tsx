@@ -3,51 +3,43 @@ import React from 'react';
 export default function WhatToExpect() {
   //progress bar example
   //https://codepen.io/desandro/pen/obpVGa
-
   const slides = [
     {
-      title: 'Inital Consult',
+      title: 'Initial Consultation',
       image: '/images/home/carousel/initial-consult.png',
-      imageAlt: 'pages full of colors and a hand holding text that says "logo"',
-      text: 'We will meet to discuss your needs, whether that be design, development or both. You will be provided with a questionnaire before the meeting to determine what your goals are.',
+      imageAlt: 'Pages full of colors and a hand holding text that says "logo"',
+      text: "During our initial consultation, we'll sit down to discuss your project needs, whether it's design, development, or both. Prior to our meeting, you'll receive a questionnaire to help determine your goals and objectives. This ensures that we're aligned from the outset and can tailor our approach to best meet your needs.",
     },
     {
-      title: 'Responsive',
+      title: 'Responsive Design',
       image: '/images/home/carousel/responsive-design.png',
       imageAlt: 'Laptop and cell phone',
-      text: 'All designs and website development will be adapted to both mobile phones and computers so your viewers will always have the best experience.',
+      text: "Your website will be designed and developed to be fully responsive, adapting seamlessly to both mobile phones and computers. This ensures that your audience enjoys a consistent and optimal browsing experience, regardless of the device they're using to access your site.",
     },
     {
-      title: 'Feedback',
+      title: 'Feedback and Collaboration',
       image: '/images/home/carousel/feedback.png',
       imageAlt: 'Two people having a meeting across a table',
-      text: 'Your feedback is valuable. You will have opportunities to provide feedback at each stage in the process, ensuring that you get as much value as possible from this process.',
+      text: "Your feedback is invaluable throughout the entire process. You'll have ample opportunities to provide input and suggestions at each stage, ensuring that your vision is fully realized. I value collaboration and strive to incorporate your feedback to create a website that exceeds your expectations.",
     },
     {
       title: 'Approval at Each Stage',
       image: '/images/home/carousel/design-approval.png',
       imageAlt: 'Thumbs up',
-      text: 'We will break up your project into stages, and your approval will be required before we proceed to the next stage to ensure you are a happy customer.',
+      text: "To ensure your satisfaction, we'll break your project into manageable stages. Your approval will be sought before progressing to the next stage, giving you full control and peace of mind throughout the process. Your happiness is my priority, and your approval is key to achieving that.",
     },
     {
       title: 'Website Previews',
       image: '/images/home/carousel/website-dev.png',
-      imageAlt: 'something',
-      text: 'It is important that you can see the changes to your website before they are published. All of my websites include website previews, so you can feel at ease about each update that is made to your website.',
+      imageAlt: 'Something',
+      text: "Transparency is essential. You'll have the opportunity to preview and review changes to your website before they're finalized and published. This allows you to provide feedback and make any necessary adjustments, ensuring that the end result perfectly reflects your vision and expectations.",
     },
     {
       title: 'Regular Check-Ins',
       image: '/images/home/carousel/regular-checkin.png',
       imageAlt: 'Two people having a video conference meeting',
-      text: 'Progress checks are important so you know where everything is at.',
+      text: "I believe in keeping you informed every step of the way. Regular progress checks and updates ensure that you're always aware of the status of your project and have the opportunity to provide input or address any concerns promptly. Open communication is key to a successful collaboration.",
     },
-    //Change to something else
-    // {
-    //   title: 'Publish Website',
-    //   image: '/images/home/carousel/publish.png',
-    //   imageAlt: 'something',
-    //   text: 'Progress checks are important so you know where everything is at.',
-    // },
   ];
 
   return (
