@@ -25,6 +25,8 @@ export default function AboutCard({ aboutCardInfo }: AboutCardProps) {
           src={aboutCardInfo.image}
           alt={aboutCardInfo.imageAlt}
           className="h-[400px] sm:h-[600px] object-cover object-[center 35%]"
+          width={1000}
+          height={1500}
         />
         <h2 className="font-semibold text-[1.325rem] mt-[1rem]">
           {mounted && isMobile

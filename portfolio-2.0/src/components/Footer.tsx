@@ -12,14 +12,14 @@ export default function Footer() {
         <div className="flex flex-col-reverse sm:flex-row items-center md:items-stretch justify-around gap-[2rem] md:gap-[0rem] md:justify-stretch w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem] py-[4rem]">
           <div className="md:w-[25%]">
             <Image
-              src="images/footer-logo.png"
+              src="/images/footer-logo.png"
               height={200}
               width={200}
               alt="LinkenIn icon"
               className="dark:hidden"
             />
             <Image
-              src="images/footer-logo-dark.png"
+              src="/images/footer-logo-dark.png"
               height={200}
               width={200}
               alt="LinkenIn icon"
@@ -42,14 +42,14 @@ export default function Footer() {
                   target="_blank"
                 >
                   <Image
-                    src="images/footer-linkedin.png"
+                    src="/images/footer-linkedin.png"
                     height={30}
                     width={30}
                     alt="LinkenIn icon"
                     className="dark:hidden"
                   />
                   <Image
-                    src="images/footer-linkedin-light.png"
+                    src="/images/footer-linkedin-light.png"
                     height={30}
                     width={30}
                     alt="LinkenIn icon"
@@ -58,14 +58,14 @@ export default function Footer() {
                 </a>
                 <a href="https://github.com/leighdahlin" target="_blank">
                   <Image
-                    src="images/footer-github.png"
+                    src="/images/footer-github.png"
                     height={35}
                     width={35}
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
-                    src="images/footer-github-light.png"
+                    src="/images/footer-github-light.png"
                     height={35}
                     width={35}
                     alt="Logo"
@@ -74,14 +74,14 @@ export default function Footer() {
                 </a>
                 <a href="mailto:leigh@leighdahlin.com">
                   <Image
-                    src="images/footer-mail.png"
+                    src="/images/footer-mail.png"
                     height={35}
                     width={35}
                     alt="Mail icon"
                     className="dark:hidden"
                   />
                   <Image
-                    src="images/footer-mail-light.png"
+                    src="/images/footer-mail-light.png"
                     height={35}
                     width={35}
                     alt="Mail icon"

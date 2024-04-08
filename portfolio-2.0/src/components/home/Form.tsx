@@ -46,11 +46,15 @@ export default function FormSection() {
                     src={b.image}
                     alt={b.alt}
                     className="dark:hidden h-[40px] w-[55px]"
+                    width={55}
+                    height={40}
                   />
                   <Image
                     src={b.darkModeImage}
                     alt={b.alt}
                     className="hidden dark:block h-[40px] w-[55px]"
+                    width={55}
+                    height={40}
                   />
                   <p className="font-semibold mt-[0.5rem] text-black dark:text-off-white">
                     {b.text}
@@ -68,6 +72,8 @@ export default function FormSection() {
             src="/images/home/contact.png"
             alt="Leigh holding a cup of coffee"
             className="hidden xl:block lg:w-1/3 xl:w-1/2 object-cover py-[2rem]"
+            width={1000}
+            height={1500}
           />
           <div
             id="contact"
@@ -99,14 +105,14 @@ function LetsConntect() {
       <div className="flex items-center gap-[4rem] pt-[2rem]">
         <a href="https://www.linkedin.com/in/leighdahlin/" target="_blank">
           <Image
-            src="images/footer-linkedin.png"
+            src="/images/footer-linkedin.png"
             height={30}
             width={30}
             alt="LinkenIn icon"
             className="dark:hidden"
           />
           <Image
-            src="images/footer-linkedin-light.png"
+            src="/images/footer-linkedin-light.png"
             height={30}
             width={30}
             alt="LinkenIn icon"
@@ -115,14 +121,14 @@ function LetsConntect() {
         </a>
         <a href="https://github.com/leighdahlin" target="_blank">
           <Image
-            src="images/footer-github.png"
+            src="/images/footer-github.png"
             height={35}
             width={35}
             alt="Logo"
             className="dark:hidden"
           />
           <Image
-            src="images/footer-github-light.png"
+            src="/images/footer-github-light.png"
             height={35}
             width={35}
             alt="Logo"
@@ -131,14 +137,14 @@ function LetsConntect() {
         </a>
         <a href="mailto:leigh@leighdahlin.com">
           <Image
-            src="images/footer-mail.png"
+            src="/images/footer-mail.png"
             height={35}
             width={35}
             alt="Mail icon"
             className="dark:hidden"
           />
           <Image
-            src="images/footer-mail-light.png"
+            src="/images/footer-mail-light.png"
             height={35}
             width={35}
             alt="Mail icon"

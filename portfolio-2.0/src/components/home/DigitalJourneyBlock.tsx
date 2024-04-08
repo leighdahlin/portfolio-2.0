@@ -17,6 +17,8 @@ export default function EmpowerJourneyBlock() {
           src="/images/home/digital-journey.png"
           alt="Man walking on beach next to mountains"
           className="w-full object-cover"
+          width={1263}
+          height={698}
         />
         <h2 className="font-semibold text-[1.325rem] mt-[1rem] text-black dark:text-off-white">
           Empowering Your Online Journey.

@@ -105,6 +105,8 @@ export default function Faq() {
                     className={`dark:hidden h-[8px] w-[13.3px] transition duration-500 ${
                       i === question ? 'rotate-180' : 'group-hover:rotate-90'
                     }`}
+                    width={40}
+                    height={40}
                   />
                   <Image
                     src="/images/home/faq-arrow-light.png"
@@ -112,6 +114,8 @@ export default function Faq() {
                     className={`hidden dark:block h-[8px] w-[13.3px] transition duration-500 ${
                       i === question ? 'rotate-180' : 'group-hover:rotate-90'
                     }`}
+                    width={40}
+                    height={40}
                   />
                 </div>
                 <p
