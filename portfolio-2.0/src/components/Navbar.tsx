@@ -326,6 +326,9 @@ export default function Navbar() {
                 <ContactButton
                   color="gold"
                   className="m-[0.875rem] md:m-[1.5625rem]"
+                  additionalFunction={() => {
+                    setNavOpen(false);
+                  }}
                 />
               </div>
             </div>
