@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['extraordinary-cranachan-fe7e16.netlify.app'],
+    domains: ['https://extraordinary-cranachan-fe7e16.netlify.app/*'],
   },
 };
 
