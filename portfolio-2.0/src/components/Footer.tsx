@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import React from 'react';
-import scrollToSection from '@/utils/scrollToSection';
 
 export default function Footer() {
   return (
@@ -28,14 +28,12 @@ export default function Footer() {
           </div>
           <div className="flex flex-col-reverse gap-[2rem] md:gap-[0rem] md:w-[75%] md:flex-row">
             <div className="flex flex-col items-center md:w-2/3">
-              <button
-                onClick={() => {
-                  scrollToSection('#contact');
-                }}
+              <Link
+                href="/contact"
                 className="p-[1rem] bg-golden text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-hover-golden w-fit min-w-[175px]"
               >
                 Get Custom Quote
-              </button>
+              </Link>
               <div className="flex justify-center items-center gap-10 pt-[2rem]">
                 <a
                   href="https://www.linkedin.com/in/leighdahlin/"
@@ -91,7 +89,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex justify-end font-semibold md:w-1/3 gap-[2rem] text-dark-blue dark:text-off-white">
-              <ul className="flex flex-col flex-wrap gap-[1rem]">
+              {/* <ul className="flex flex-col flex-wrap gap-[1rem]">
                 <li className="group relative w-fit">
                   <button
                     onClick={() => {
@@ -113,27 +111,15 @@ export default function Footer() {
 
                   <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
                 </li>
-              </ul>
+              </ul> */}
               <ul className="flex flex-col flex-wrap gap-[1rem]">
                 <li className="group relative w-fit">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#whattoexpect');
-                    }}
-                  >
-                    What to Expect
-                  </button>
+                  <Link href="/portfolio">Portfolio</Link>
 
                   <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
                 </li>
                 <li className="group relative w-fit">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#contact');
-                    }}
-                  >
-                    Contact
-                  </button>
+                  <Link href="/contact">Contact</Link>
 
                   <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
                 </li>

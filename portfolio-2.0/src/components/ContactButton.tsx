@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 type ContactButtonProps = {
   color: 'white' | 'gradient' | 'gold';
@@ -11,18 +12,13 @@ const ContactButton: React.FC<ContactButtonProps> = ({
   className,
   additionalFunction,
 }: ContactButtonProps) => {
-  const scrollToContact = () => {
-    const contactSection = document.querySelector('#contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const router = useRouter();
 
   const handleClick = () => {
     if (additionalFunction) {
       additionalFunction();
     }
-    scrollToContact();
+    router.push('/contact');
   };
 
   return (

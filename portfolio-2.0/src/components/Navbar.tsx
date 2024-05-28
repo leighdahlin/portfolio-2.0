@@ -6,7 +6,6 @@ import logoLight from './img/logo-light.png';
 import ContactButton from './ContactButton';
 import useIsMobile from '@/hooks/useIsMobile';
 import Link from 'next/link';
-import scrollToSection from '@/utils/scrollToSection';
 
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,20 +14,20 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
-  // const links = [
-  //   {
-  //     displayName: 'Services',
-  //     link: '/services/',
-  //   },
-  //   {
-  //     displayName: 'Experience',
-  //     link: '/experience/',
-  //   },
-  //   {
-  //     displayName: 'Projects',
-  //     link: '/projects/',
-  //   },
-  // ];
+  const links = [
+    {
+      displayName: 'Portfolio',
+      link: '/portfolio/',
+    },
+    // {
+    //   displayName: 'About',
+    //   link: '/about/',
+    // },
+    // {
+    //   displayName: 'Services',
+    //   link: '/services/',
+    // },
+  ];
 
   useEffect(() => {
     if (navOpen && !isMobile) {
@@ -104,7 +103,7 @@ export default function Navbar() {
           {mounted &&
             (!isMobile ? (
               <ul className="hidden sm:flex justify-center items-center list-none gap-[35px] text-dark-blue dark:text-off-white">
-                {/* {links.map((l) => (
+                {links.map((l) => (
                   <li key={l.displayName} className="group relative">
                     <Link
                       href={l.link}
@@ -114,42 +113,7 @@ export default function Navbar() {
                     </Link>
                     <div className="h-[.25rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-[1.5rem] group-hover:right-[auto]" />
                   </li>
-                ))} */}
-                {/* REMOVE ONCE CREATE PAGES FOR LINKS */}
-                <li className="group relative">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#about');
-                    }}
-                    className="uppercase font-semibold tracking-[.1rem]"
-                  >
-                    About
-                  </button>
-                  <div className="h-[.25rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-[1.5rem] group-hover:right-[auto]" />
-                </li>
-                <li className="group relative">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#whattoexpect');
-                    }}
-                    className="uppercase font-semibold tracking-[.1rem]"
-                  >
-                    What to Expect
-                  </button>
-                  <div className="h-[.25rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-[1.5rem] group-hover:right-[auto]" />
-                </li>
-                <li className="group relative">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#faq');
-                    }}
-                    className="uppercase font-semibold tracking-[.1rem]"
-                  >
-                    FAQs
-                  </button>
-                  <div className="h-[.25rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-[1.5rem] group-hover:right-[auto]" />
-                </li>
-                {/* REMOVE ONCE CREATE PAGES FOR LINKS */}
+                ))}
                 <li>
                   <div
                     data-id="dark mode toggle"
@@ -261,7 +225,7 @@ export default function Navbar() {
           >
             <div className="h-screen border-t-[0.5px] border-grey">
               <div className="flex flex-col">
-                {/* {links.map((l) => (
+                {links.map((l) => (
                   <a
                     key={l.displayName}
                     href={l.link}
@@ -269,34 +233,7 @@ export default function Navbar() {
                   >
                     {l.displayName}
                   </a>
-                ))} */}
-                <button
-                  onClick={() => {
-                    setNavOpen(!navOpen);
-                    scrollToSection('#about');
-                  }}
-                  className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey text-left"
-                >
-                  About
-                </button>
-                <button
-                  onClick={() => {
-                    setNavOpen(!navOpen);
-                    scrollToSection('#whattoexpect');
-                  }}
-                  className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey text-left"
-                >
-                  What to Expect
-                </button>
-                <button
-                  onClick={() => {
-                    setNavOpen(!navOpen);
-                    scrollToSection('#faq');
-                  }}
-                  className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey text-left"
-                >
-                  FAQs
-                </button>
+                ))}
                 <div
                   data-id="dark mode toggle"
                   className="flex justify-center items-center gap-[1rem] p-[1rem]"
