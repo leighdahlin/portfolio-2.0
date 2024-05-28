@@ -80,7 +80,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-dark-blue flex justify-center">
-      <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[4.75rem] mx-auto px-[0.875rem] md:px-[1.5625rem]">
+      <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[4.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <Link href="/">
           <Image
             src={logoDark}
