@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import givherclientLogoLight from './img/givher/client-logo-givher.png';
@@ -50,6 +50,7 @@ type ClientProject = {
 };
 
 export default function ClientSection() {
+  const modalRef = useRef<null | HTMLDivElement>(null);
   const [showProject, setShowProject] = useState<null | ClientProject>(null);
   const [selectedThumnail, setSelectedThumbnail] = useState<number>(0);
   const [darkMode, setDarkMode] = useState(false);
@@ -61,6 +62,37 @@ export default function ClientSection() {
     }
     return () => {
       document.body.style.overflow = 'unset';
+    };
+  }, [showProject]);
+
+  const handleProjectClose = () => {
+    setShowProject(null);
+    setSelectedThumbnail(0);
+    setDarkMode(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        console.log('close project');
+        handleProjectClose();
+      }
+      console.log('do not close project');
+    };
+
+    if (showProject) {
+      console.log('add listener');
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      console.log('remove listener');
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [showProject]);
 
@@ -183,7 +215,6 @@ export default function ClientSection() {
           <div></div>
         </div> */}
         <div
-          data-id="bio"
           className={`transition-opacity duration-300 ease-in-out z-[101] ${
             showProject ? 'opacity-100' : 'opacity-0'
           }`}
@@ -192,14 +223,14 @@ export default function ClientSection() {
             <div
               className={`fixed top-0 left-0 bottom-0 w-full h-full bg-overlay visible overflow-hidden`}
             >
-              <div className="bg-off-white dark:bg-dark-blue opacity-100 max-w-[85.75rem] max-h-[100vh] mx-auto relative m-[2.5rem] p-[1rem] md:p-[2.5rem] overflow-y-scroll">
+              <div
+                ref={modalRef}
+                className="bg-off-white dark:bg-dark-blue opacity-100 max-w-[85.75rem] max-h-[100vh] mx-auto relative m-[3rem] p-[1rem] md:p-[2.5rem] overflow-y-scroll"
+              >
                 <button
                   type="button"
                   data-id="Close Button"
-                  onClick={() => {
-                    setShowProject(null);
-                    setSelectedThumbnail(0);
-                  }}
+                  onClick={handleProjectClose}
                   className={`group self-end flex flex-col items-center justify-between h-[50px] w-[50px] p-0 transition-transform absolute top-[10px] right-[10px]`}
                 >
                   <div
@@ -216,7 +247,7 @@ export default function ClientSection() {
                       alt={`${showProject.clientName} logo`}
                       width={showProject.logoWidth}
                       height={showProject.logoHeight}
-                      className="pb-[1rem] max-w-[150px] md:max-w-[unset]"
+                      className="pb-[1rem] max-w-[150px]"
                     />
                     <div className="w-full flex flex-wrap items-center gap-[0.5rem] sm:gap-[1rem]">
                       <Link
@@ -262,8 +293,8 @@ export default function ClientSection() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col md:flex-row gap-[1rem]">
-                    <div>
+                  <div className="flex flex-col md:flex-row gap-[1rem] relative">
+                    <div className="sticky top-0">
                       <div
                         data-id="dark mode toggle"
                         className="flex md:justify-center items-center gap-[1rem]"
@@ -292,7 +323,7 @@ export default function ClientSection() {
                           Show Dark Mode
                         </p>
                       </div>
-                      <div className="flex flex-row md:flex-col gap-[1rem] pt-[1rem]">
+                      <div className="bg-off-white flex flex-row md:flex-col gap-[1rem] p-[1rem]">
                         {showProject.pages.map((p, i) => (
                           <button
                             key={i}
