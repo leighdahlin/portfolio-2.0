@@ -24,6 +24,16 @@ const config: Config = {
       'hover-golden': 'rgba(216, 152, 31, 0.75)',
       grey: '#d3d5d7',
       bluegray: '#839DA9',
+      customGrey: '#D5CDCB',
+      customGreyDarker: '#B2ABAA',
+      overlay: 'rgba(0,0,0,.75)',
+    },
+    backgroundImage: {
+      'gradient-to-r': 'linear-gradient(to right, #D5CDCB, #FAFAFA)',
+      'gradient-to-b': 'linear-gradient(to bottom, #D5CDCB, #FAFAFA)',
+    },
+    boxShadow: {
+      'custom-light-separation': '0 2px 12px rgba(0, 0, 0, 0.15)', // Adjust values as needed
     },
   },
   plugins: [],

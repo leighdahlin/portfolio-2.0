@@ -135,7 +135,7 @@ export default function Navbar() {
                         className={`absolute cursor-pointer rounded-[34px] top-0 left-0 right-0 bottom-0 transition before:absolute before:h-[26px] before:w-[26px] before:left-[4px] before:bottom-[4px] before:transition-all before:rounded-[50%] ${
                           darkMode
                             ? 'bg-off-white before:bg-golden before:translate-x-[26px]'
-                            : 'bg-grey before:bg-off-white'
+                            : 'bg-customGrey before:bg-off-white'
                         }`}
                       ></span>
                     </label>
@@ -223,13 +223,13 @@ export default function Navbar() {
           <div
             className={`flex flex-col h-full bg-off-white dark:bg-dark-blue`}
           >
-            <div className="h-screen border-t-[0.5px] border-grey">
+            <div className="h-screen border-t-[0.5px] border-customGrey">
               <div className="flex flex-col">
                 {links.map((l) => (
                   <a
                     key={l.displayName}
                     href={l.link}
-                    className="p-[1rem] text-dark-blue dark:text-off-white border-b border-grey"
+                    className="p-[1rem] text-dark-blue dark:text-off-white border-b border-customGrey"
                   >
                     {l.displayName}
                   </a>
@@ -254,7 +254,7 @@ export default function Navbar() {
                       className={`absolute cursor-pointer rounded-[34px] top-0 left-0 right-0 bottom-0 transition before:absolute before:h-[26px] before:w-[26px] before:left-[4px] before:bottom-[4px] before:transition-all before:rounded-[50%] ${
                         darkMode
                           ? 'bg-off-white before:bg-golden before:translate-x-[26px]'
-                          : 'bg-grey before:bg-off-white'
+                          : 'bg-customGrey before:bg-off-white'
                       }`}
                     ></span>
                   </label>
