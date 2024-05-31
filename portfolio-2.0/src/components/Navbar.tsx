@@ -151,7 +151,7 @@ export default function Navbar() {
                 onClick={() => {
                   setNavOpen(!navOpen);
                 }}
-                className="flex flex-col items-center justify-between w-[22px] h-[20px] p-0"
+                className="flex flex-col items-center justify-between w-[35px] h-[25px] p-0"
               >
                 <div className="bg-dark-blue dark:bg-off-white h-[2px] w-full " />
                 <div className="bg-dark-blue dark:bg-off-white h-[2px] w-full " />
@@ -161,7 +161,6 @@ export default function Navbar() {
         </nav>
       </div>
       {mounted && navOpen && (
-        // <div className="flex-1 relative bg-off-white dark:bg-dark-blue h-full w-full">
         <div
           id="mobile-nav"
           className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white dark:bg-dark-blue ${
@@ -221,7 +220,7 @@ export default function Navbar() {
             </button>
           </div>
           <div
-            className={`flex flex-col h-full bg-off-white dark:bg-dark-blue`}
+            className={`flex flex-col h-screen bg-off-white dark:bg-dark-blue`}
           >
             <div className="h-screen border-t-[0.5px] border-customGrey">
               <div className="flex flex-col">
