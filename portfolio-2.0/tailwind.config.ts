@@ -33,7 +33,7 @@ const config: Config = {
       'gradient-to-b': 'linear-gradient(to bottom, #D5CDCB, #FAFAFA)',
     },
     boxShadow: {
-      'custom-light-separation': '0 2px 12px rgba(0, 0, 0, 0.15)', // Adjust values as needed
+      'custom-light-separation': '0 2px 12px rgba(0, 0, 0, 0.15)',
     },
   },
   plugins: [],

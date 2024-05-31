@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-dark-blue mx-[auto] w-full">
+    <footer className="bg-white dark:bg-dark-blue mx-[auto] w-full shadow-custom-light-separation">
       <div className="h-[1px] bg-gradient-to-r from-bluegray to-golden w-ful hidden dark:block" />
       <div className="flex items-center justify-center">
         <div className="flex flex-col-reverse sm:flex-row items-center md:items-stretch justify-around gap-[2rem] md:gap-[0rem] md:justify-stretch w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem] py-[4rem]">
@@ -89,29 +89,6 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex justify-end font-semibold md:w-1/3 gap-[2rem] text-dark-blue dark:text-off-white">
-              {/* <ul className="flex flex-col flex-wrap gap-[1rem]">
-                <li className="group relative w-fit">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#about');
-                    }}
-                  >
-                    About
-                  </button>
-                  <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
-                </li>
-                <li className="group relative w-fit">
-                  <button
-                    onClick={() => {
-                      scrollToSection('#faq');
-                    }}
-                  >
-                    FAQs
-                  </button>
-
-                  <div className="h-[.15rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-full group-hover:right-[auto]" />
-                </li>
-              </ul> */}
               <ul className="flex flex-col flex-wrap gap-[1rem]">
                 <li className="group relative w-fit">
                   <Link href="/portfolio">Portfolio</Link>

@@ -78,7 +78,7 @@ export default function Navbar() {
   }, [navOpen]); // Empty dependency array ensures this effect runs only once after the initial render
 
   return (
-    <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-dark-blue flex justify-center">
+    <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-dark-blue flex justify-center drop-shadow-xl">
       <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[4.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <Link href="/">
           <Image
