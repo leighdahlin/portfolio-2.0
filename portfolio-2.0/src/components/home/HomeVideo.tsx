@@ -17,7 +17,7 @@ export default function HomeVideo() {
             className="block box-border text-black dark:text-off-white mx-[0.625rem] md:mx-[0rem]"
           >
             <div className="block box-border bg-off-white dark:bg-dark-blue w-full md:absolute md:top-[9.4375rem] md:w-[16rem] md:z-20">
-              <h1 className="uppercase font-semibold leading-8 text-[1.5rem] pt-[2.5rem] md:pt-[2rem] md:pr-[1rem] tracking-[.1rem] text-center md:text-left max-w-[240px] mx-auto">
+              <h1 className="uppercase font-semibold leading-8 text-[1.5rem] pt-[1.5rem] md:pt-[2rem] md:pr-[1rem] tracking-[.1rem] text-center md:text-left max-w-[240px] mx-auto">
                 Your vision, My expertise
               </h1>
               <p className="pt-[0.5rem] md:pr-[1rem] pb-[1rem] md:pb-[2rem] text-center md:text-left">
@@ -62,12 +62,12 @@ export default function HomeVideo() {
         </div>
         <div
           data-id="bottom-text"
-          className="flex flex-col md:flex-row md:justify-between items-center mt-[1rem] md:mt-[2.5rem] mx-[0.625rem] md:mx-[0rem] text-black dark:text-off-white"
+          className="flex flex-col md:flex-row md:justify-between mt-[1rem] md:mt-[2.5rem] mx-[0.625rem] md:mx-[0rem] text-black dark:text-off-white"
         >
-          <h1 className="font-semibold leading-8 text-[1.5rem] text-center md:text-left">
+          <h1 className="font-semibold leading-8 text-[1.5rem] text-left">
             Design and Development Services.
           </h1>
-          <p className="text-center md:text-left pt-[0.5rem] md:pt-[0rem]">
+          <p className="text-left pt-[0.5rem] md:pt-[0rem]">
             Crafting your digital identity with someone you can trust.
           </p>
         </div>
