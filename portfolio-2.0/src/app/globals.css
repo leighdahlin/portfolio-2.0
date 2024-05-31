@@ -45,6 +45,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+p {
+  @media (max-width: 640px) {
+    line-height: 1.25;
+  }
+}
+
 @layer {
   .shadow-custom {
     @media (min-width: 768px) {
