@@ -16,7 +16,7 @@ export default function AboutBlocks() {
       mobileTitle: 'Professional Background.',
       webTitle: 'Professional.',
       description:
-        'Leigh brings a wealth of experience to the table as a professional, having spent 7 years as a Certified Public Accountant before transitioning to development. With dedication to crafting exceptional user experiences, Leigh is committed to delivering top-notch results for every project.',
+        'Leigh brings a wealth of experience to the table as a professional, having spent 7 years as a Certified Public Accountant before transitioning to development in 2021. With dedication to crafting exceptional user experiences, Leigh is committed to delivering top-notch results for every project.',
       buttonText: 'View Experience',
       image: '/images/home/professional.png',
       imageAlt:

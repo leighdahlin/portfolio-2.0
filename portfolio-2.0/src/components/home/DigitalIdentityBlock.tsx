@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function DigitalIdentityBlock() {
@@ -28,14 +29,12 @@ export default function DigitalIdentityBlock() {
           your needs? Choose a website that offers flexibility and adaptability,
           ensuring it grows seamlessly alongside your business.
         </p>
-        <button
-          onClick={() => {
-            scrollToFaq();
-          }}
-          className="p-[1rem] bg-off-white dark:bg-dark-blue text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue my-[1rem] border border-dark-blue dark:border-off-white md:max-w-[175px]"
+        <Link
+          href="/portfolio"
+          className="p-[1rem] text-center bg-off-white dark:bg-dark-blue text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue my-[1rem] border border-dark-blue dark:border-off-white md:max-w-[175px]"
         >
-          View FAQs
-        </button>
+          View Portfolio
+        </Link>
       </div>
     </div>
   );
