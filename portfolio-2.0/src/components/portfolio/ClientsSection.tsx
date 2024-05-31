@@ -182,7 +182,7 @@ export default function ClientSection() {
 
   return (
     <div className=" bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center lg:items-stretch scroll-mt-[76px]">
-      <div className="flex flex-col mx-[0.625rem] max-w-[85.75rem] lg:mx-[1.5625rem] gap-[4rem] w-full">
+      <div className="flex flex-col mx-[0.625rem] max-w-[85.75rem] lg:mx-[1.5625rem] gap-[4rem] w-full md:py-[2rem]">
         <div className="flex flex-col lg:flex-row gap-[2rem] lg:justify-between w-full">
           <div className="flex flex-col gap-[1rem]">
             <h1 className="font-semibold leading-8 text-[1.5rem] dark:text-off-white">
