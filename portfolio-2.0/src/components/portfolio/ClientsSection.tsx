@@ -17,6 +17,8 @@ import givherThumbnailDarkmodeEventDetail from './img/givher/thumbnail-darkmode-
 import givherFullPageDarkmodeHome from './img/givher/fullpage-darkmode-homepage.png';
 import givherFullPageDarkmodeEvents from './img/givher/fullpage-darkmode-events.png';
 import givherFullPageDarkmodeEventDetail from './img/givher/fullpage-darkmode-event-detail.png';
+import brewHoperatorBackground from './img/brew-hoperator/personal-background-brewhoperator.png';
+import brewHoperatorLogoLight from './img/brew-hoperator/bh-logo.png';
 
 type FeaturedPage = {
   pageName: string;
@@ -47,6 +49,17 @@ type ClientProject = {
   highlights: Highlight[];
   pages: FeaturedPage[];
   darkMode: boolean;
+};
+
+type PersonalProject = {
+  logoLight: StaticImageData;
+  logoWidth: number;
+  logoHeight: number;
+  projectName: string;
+  backgroundImage: StaticImageData;
+  title: string;
+  description: string;
+  comingSoon: boolean;
 };
 
 export default function ClientSection() {
@@ -152,9 +165,24 @@ export default function ClientSection() {
       darkMode: true,
     },
   ];
+
+  const personalProjects: PersonalProject[] = [
+    {
+      logoLight: brewHoperatorLogoLight,
+      logoWidth: 250,
+      logoHeight: 106,
+      projectName: 'Brew Hoperator',
+      backgroundImage: brewHoperatorBackground,
+      title: 'Innovative Beer Discovery Platform',
+      description:
+        'Designing and developing an interactive website to educate users about different beers and help them find local breweries. Brew Hoperator offers an engaging user experience with comprehensive information and intuitive navigation.',
+      comingSoon: true,
+    },
+  ];
+
   return (
     <div className=" bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center lg:items-stretch py-[4rem] scroll-mt-[76px]">
-      <div className="flex flex-col mx-[0.625rem] max-w-[85.75rem] lg:mx-[1.5625rem] lg:gap-[1rem] w-full">
+      <div className="flex flex-col mx-[0.625rem] max-w-[85.75rem] lg:mx-[1.5625rem] gap-[4rem] w-full">
         <div className="flex flex-col lg:flex-row gap-[2rem] lg:justify-between w-full">
           <div className="flex flex-col gap-[1rem]">
             <h1 className="font-semibold leading-8 text-[1.5rem]">
@@ -166,7 +194,7 @@ export default function ClientSection() {
               client needs, solve problems, and deliver outstanding results.
             </p>
           </div>
-          <div className="">
+          <div>
             {clientProjects.map((p, i) => (
               <div key={i} className="relative w-full max-w-[720px]">
                 <Image
@@ -202,18 +230,59 @@ export default function ClientSection() {
             ))}
           </div>
         </div>
-        {/* <div className="flex flex-col lg:flex-row">
-          <div className="flex flex-row">
-            <h1 className="font-semibold leading-8 text-[1.5rem]">Personal Projects</h1>
-            <p>
+        <div className="flex flex-col lg:flex-row gap-[2rem] lg:justify-between w-full">
+          <div className="flex flex-col gap-[1rem]">
+            <h1 className="font-semibold leading-8 text-[1.5rem]">
+              Personal Projects
+            </h1>
+            <p className="lg:max-w-[500px]">
               These are the projects I&apos;ve worked on independently, driven
-              by my passion for [your field/industry]. These projects allow me
+              by my passion for development and design. These projects allow me
               to experiment with new ideas, hone my skills, and showcase my
               creativity.
             </p>
           </div>
-          <div></div>
-        </div> */}
+          <div>
+            {personalProjects.map((p, i) => (
+              <div key={i} className="relative w-full max-w-[720px]">
+                <Image
+                  src={p.backgroundImage}
+                  alt={p.projectName}
+                  width={720}
+                  height={442}
+                  className="w-full min-h-[442px] object-cover"
+                />
+                <div className="h-full max-w-[720px] absolute top-0 px-[2.5rem] py-[2rem] flex flex-col justify-between">
+                  <Image
+                    src={p.logoLight}
+                    alt={`${p.projectName} logo`}
+                    width={p.logoWidth}
+                    height={p.logoHeight}
+                  />
+                  <div className="flex flex-col gap-[1rem]">
+                    <h2 className="font-semibold md:leading-8 text-[1rem] text-off-white">
+                      {p.title}
+                    </h2>
+                    <p className="text-off-white">{p.description}</p>
+                  </div>
+                  {p.comingSoon && (
+                    <div className="font-semibold text-off-white text-[1rem]">
+                      Coming Soon!
+                    </div>
+                  )}
+                  {/* <button
+                    onClick={() => {
+                      setShowProject(p);
+                    }}
+                    className="p-[1rem] bg-transparent text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-off-white dark:hover:bg-off-white hover:text-dark-blue dark:hover:text-dark-blue my-[1rem] border border-off-white w-fit min-w-[175px]"
+                  >
+                    View Project
+                  </button> */}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         <div
           className={`transition-opacity duration-300 ease-in-out z-[101] ${
             showProject ? 'opacity-100' : 'opacity-0'
