@@ -11,7 +11,7 @@ export default function PortfolioHeader() {
         alt="a laptop next to a cup of coffee and some leaves"
         width={512}
         height={512}
-        className="lg:w-full lg:max-w-[669px]"
+        className="lg:w-full lg:max-w-[500px]"
         loading="eager"
       />
       <div className="flex w-full lg:justify-center">
