@@ -3,14 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function DigitalIdentityBlock() {
-  const scrollToFaq = () => {
-    const contactSection = document.querySelector('#faq');
-    console.log(contactSection);
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
