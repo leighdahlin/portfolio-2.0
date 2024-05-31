@@ -181,14 +181,14 @@ export default function ClientSection() {
   ];
 
   return (
-    <div className=" bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center lg:items-stretch py-[4rem] scroll-mt-[76px]">
+    <div className=" bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center lg:items-stretch scroll-mt-[76px]">
       <div className="flex flex-col mx-[0.625rem] max-w-[85.75rem] lg:mx-[1.5625rem] gap-[4rem] w-full">
         <div className="flex flex-col lg:flex-row gap-[2rem] lg:justify-between w-full">
           <div className="flex flex-col gap-[1rem]">
-            <h1 className="font-semibold leading-8 text-[1.5rem]">
+            <h1 className="font-semibold leading-8 text-[1.5rem] dark:text-off-white">
               Client Projects
             </h1>
-            <p className="lg:max-w-[500px]">
+            <p className="lg:max-w-[500px] dark:text-off-white">
               These are the projects I&apos;ve completed in collaboration with
               my clients. Each project demonstrates my ability to understand
               client needs, solve problems, and deliver outstanding results.
@@ -221,7 +221,7 @@ export default function ClientSection() {
                     onClick={() => {
                       setShowProject(p);
                     }}
-                    className="p-[1rem] bg-transparent text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-off-white dark:hover:bg-off-white hover:text-dark-blue dark:hover:text-dark-blue my-[1rem] border border-off-white w-fit min-w-[175px]"
+                    className="p-[1rem] bg-transparent text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-off-white dark:hover:bg-off-white hover:text-dark-blue dark:hover:text-dark-blue my-[1rem] border border-off-white md:w-fit md:min-w-[175px]"
                   >
                     View Project
                   </button>
@@ -232,10 +232,10 @@ export default function ClientSection() {
         </div>
         <div className="flex flex-col lg:flex-row gap-[2rem] lg:justify-between w-full">
           <div className="flex flex-col gap-[1rem]">
-            <h1 className="font-semibold leading-8 text-[1.5rem]">
+            <h1 className="font-semibold leading-8 text-[1.5rem] dark:text-off-white">
               Personal Projects
             </h1>
-            <p className="lg:max-w-[500px]">
+            <p className="lg:max-w-[500px] dark:text-off-white">
               These are the projects I&apos;ve worked on independently, driven
               by my passion for development and design. These projects allow me
               to experiment with new ideas, hone my skills, and showcase my
@@ -316,7 +316,14 @@ export default function ClientSection() {
                       alt={`${showProject.clientName} logo`}
                       width={showProject.logoWidth}
                       height={showProject.logoHeight}
-                      className="pb-[1rem] max-w-[150px]"
+                      className="pb-[1rem] max-w-[150px] dark:hidden"
+                    />
+                    <Image
+                      src={showProject.clientLogoLight}
+                      alt={`${showProject.clientName} logo`}
+                      width={showProject.logoWidth}
+                      height={showProject.logoHeight}
+                      className="hidden pb-[1rem] max-w-[150px] dark:block"
                     />
                     <div className="w-full flex flex-wrap items-center gap-[0.5rem] sm:gap-[1rem]">
                       <Link
@@ -335,12 +342,14 @@ export default function ClientSection() {
                   </div>
                   <div className="flex flex-col md:flex-row gap-[1rem] md:gap-[2rem]">
                     <div className="flex flex-1 flex-col gap-[1rem]">
-                      <h1 className="font-semibold leading-8 text-[1.5rem]">
+                      <h1 className="font-semibold leading-8 text-[1.5rem] dark:text-off-white">
                         {showProject.title}
                       </h1>
-                      <p>{showProject.longDescription}</p>
+                      <p className="dark:text-off-white">
+                        {showProject.longDescription}
+                      </p>
                     </div>
-                    <div className="flex flex-1 flex-col gap-[1rem]">
+                    <div className="flex flex-1 flex-col gap-[1rem] dark:text-off-white">
                       <div>
                         <h2 className="font-semibold inline-block">
                           Skills Used
@@ -362,11 +371,11 @@ export default function ClientSection() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col md:flex-row gap-[1rem] relative">
-                    <div className="sticky top-0">
+                  <div className="flex flex-col lg:flex-row gap-[1rem] relative">
+                    <div className="sticky top-0 bg-off-white dark:bg-dark-blue">
                       <div
                         data-id="dark mode toggle"
-                        className="flex md:justify-center items-center gap-[1rem]"
+                        className="flex lg:justify-center items-center gap-[1rem]"
                       >
                         <label
                           id="switch"
@@ -392,7 +401,7 @@ export default function ClientSection() {
                           Show Dark Mode
                         </p>
                       </div>
-                      <div className="bg-off-white flex flex-row md:flex-col gap-[1rem] p-[1rem]">
+                      <div className="flex flex-row lg:flex-col gap-[1rem] py-[0.75rem]">
                         {showProject.pages.map((p, i) => (
                           <button
                             key={i}
@@ -408,7 +417,7 @@ export default function ClientSection() {
                               height={136}
                               className={`${
                                 selectedThumnail === i
-                                  ? 'md:scale-105 transition-all ease-in-out drop-shadow-xl duration-200'
+                                  ? 'lg:scale-105 transition-all ease-in-out drop-shadow-xl duration-200'
                                   : 'scale:100 drop-shadow-none'
                               } `}
                             />

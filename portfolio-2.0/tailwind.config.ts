@@ -31,6 +31,8 @@ const config: Config = {
     backgroundImage: {
       'gradient-to-r': 'linear-gradient(to right, #D5CDCB, #FAFAFA)',
       'gradient-to-b': 'linear-gradient(to bottom, #D5CDCB, #FAFAFA)',
+      transparent:
+        'linear-gradient(to bottom, rgba(213, 205, 203, 0), rgba(250, 250, 250, 0))',
     },
     boxShadow: {
       'custom-light-separation': '0 2px 12px rgba(0, 0, 0, 0.15)',
