@@ -24,13 +24,13 @@ const config: Config = {
       'hover-golden': 'rgba(216, 152, 31, 0.75)',
       grey: '#d3d5d7',
       bluegray: '#839DA9',
-      customGrey: '#D5CDCB',
+      customGrey: '#DACDCA',
       customGreyDarker: '#B2ABAA',
       overlay: 'rgba(0,0,0,.75)',
     },
     backgroundImage: {
-      'gradient-to-r': 'linear-gradient(to right, #D5CDCB, #FAFAFA)',
-      'gradient-to-b': 'linear-gradient(to bottom, #D5CDCB, #FAFAFA)',
+      'gradient-to-r': 'linear-gradient(to right, #DACDCA, #FAFAFA)',
+      'gradient-to-b': 'linear-gradient(to bottom, #DACDCA, #FAFAFA)',
       transparent:
         'linear-gradient(to bottom, rgba(213, 205, 203, 0), rgba(250, 250, 250, 0))',
     },
