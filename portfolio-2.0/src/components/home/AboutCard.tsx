@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import useIsMobile from '@/hooks/useIsMobile';
 import { AboutCardInfoType } from './AboutBlocks';
