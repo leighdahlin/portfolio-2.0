@@ -5,6 +5,8 @@ import Script from 'next/script';
 import Link from 'next/link';
 
 export async function generateMetadata() {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
   return {
     title: 'Leigh Dahlin - Innovative Frontend Development & Design',
     description:
@@ -16,6 +18,13 @@ export async function generateMetadata() {
       url: '/',
       siteName: 'Leigh Dahlin',
       type: 'website',
+      images: [
+        {
+          url: `${baseUrl}/images/link-preview.png`,
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
   };
 }
