@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is the repository for my personal portfolio website. It is built using React and Next.js, styled with Tailwind CSS, and deployed on Netlify.
+This is the repository for my personal portfolio website. It is built using React and Next.js, styled with Tailwind CSS, and deployed on Netlify. It is deployed here: [https://leighdahlin.com/](https://yarnpkg.com/)
 
 ## Table of Contents
 
