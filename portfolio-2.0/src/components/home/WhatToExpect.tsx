@@ -55,7 +55,7 @@ export default function WhatToExpect() {
         </h1>
         <div
           className="main-carousel"
-          data-flickity='{ "freeScroll": true, "imagesLoaded": true, "adaptiveHeight": true, "prevNextButtons": true, "cellAlign": "left" }'
+          data-flickity='{ "freeScroll": true, "imagesLoaded": true, "adaptiveHeight": true, "prevNextButtons": true, "cellAlign": "left", "wrapAround": true }'
         >
           {slides.map((s) => (
             <div
