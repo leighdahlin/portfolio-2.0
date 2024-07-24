@@ -10,14 +10,14 @@ export default function HomeVideo() {
   };
 
   return (
-    <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center mb-[2.5rem]">
+    <div className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center mb-[2.5rem]">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <div className="w-full grid grid-cols-12 gap-4">
           <div
             data-id="top-text"
             className="block box-border text-black dark:text-off-white mx-[0.625rem] md:mx-[0rem] col-start-1 col-span-12"
           >
-            <div className="block box-border bg-off-white dark:bg-dark-blue w-full md:absolute md:top-[14rem] md:w-[16rem] md:z-20">
+            <div className="block box-border bg-off-white dark:bg-soft-black w-full md:absolute md:top-[14rem] md:w-[16rem] md:z-20">
               <h1 className="uppercase font-semibold leading-8 text-[1.5rem] pt-[1.5rem] md:pt-[2rem] md:pr-[1rem] tracking-[.1rem] text-center md:text-left max-w-[240px] mx-auto">
                 Your vision, My expertise
               </h1>

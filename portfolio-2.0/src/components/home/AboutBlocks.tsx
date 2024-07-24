@@ -44,7 +44,7 @@ export default function AboutBlocks() {
   return (
     <div
       id="about"
-      className=" bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center md:items-stretch pb-[2rem] scroll-mt-[76px]"
+      className=" bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center md:items-stretch pb-[2rem] scroll-mt-[76px]"
     >
       <div className="flex flex-col items-center justify-center mx-[0.625rem] max-w-[85.75rem] md:flex-row md:mx-[1.5625rem] md:gap-[1rem]">
         {aboutCards.map((c) => (

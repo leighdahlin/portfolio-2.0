@@ -12,9 +12,9 @@ export default function GlobalLayout({
   return (
     <>
       <div className={montserrat.className}>
-        <div className="flex flex-col justify-between min-h-screen bg-off-white dark:bg-dark-blue">
+        <div className="flex flex-col justify-between min-h-screen bg-off-white dark:bg-soft-black">
           <Navbar />
-          <main className="block min-h-[100vh - 291px] bg-off-white dark:bg-dark-blue">
+          <main className="block min-h-[100vh - 291px] bg-off-white dark:bg-soft-black">
             {children}
           </main>
           <Footer />

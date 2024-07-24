@@ -51,7 +51,7 @@ export default function Faq() {
   return (
     <div
       id="faq"
-      className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center scroll-mt-[76px]"
+      className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center scroll-mt-[76px]"
     >
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <div className="flex flex-col lg:flex-row justify-between gap-[3rem]">
@@ -68,7 +68,7 @@ export default function Faq() {
                 onClick={() => {
                   scrollToContact();
                 }}
-                className="min-w-[175px] p-[1rem] bg-off-white dark:bg-dark-blue text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue mt-[1rem] border border-dark-blue dark:border-off-white md:max-w-[175px]"
+                className="min-w-[175px] p-[1rem] bg-off-white dark:bg-soft-black text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue mt-[1rem] border border-dark-blue dark:border-off-white md:max-w-[175px]"
               >
                 Contact
               </button>

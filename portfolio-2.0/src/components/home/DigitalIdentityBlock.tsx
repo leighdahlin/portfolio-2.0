@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function DigitalIdentityBlock() {
   return (
-    <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center">
+    <div className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <Image
           src="/images/home/digital-identity.png"
@@ -23,7 +23,7 @@ export default function DigitalIdentityBlock() {
         </p>
         <Link
           href="/portfolio"
-          className="p-[1rem] text-center bg-off-white dark:bg-dark-blue text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue my-[1rem] border border-dark-blue dark:border-off-white md:max-w-[175px]"
+          className="p-[1rem] text-center bg-off-white dark:bg-soft-black text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue my-[1rem] border border-dark-blue dark:border-off-white md:max-w-[175px]"
         >
           View Portfolio
         </Link>

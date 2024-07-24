@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-dark-blue mx-[auto] w-full shadow-custom-light-separation">
+    <footer className="bg-white dark:bg-soft-black mx-[auto] w-full shadow-custom-light-separation">
       <div className="h-[1px] bg-gradient-to-r from-bluegray to-golden w-ful hidden dark:block" />
       <div className="flex items-center justify-center">
         <div className="flex flex-col-reverse sm:flex-row items-center md:items-stretch justify-around gap-[2rem] md:gap-[0rem] md:justify-stretch w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem] py-[4rem]">

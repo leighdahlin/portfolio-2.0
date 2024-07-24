@@ -78,24 +78,24 @@ export default function Navbar() {
   }, [navOpen]); // Empty dependency array ensures this effect runs only once after the initial render
 
   return (
-    <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-dark-blue flex justify-center drop-shadow-xl">
-      <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[4.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
+    <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-soft-black flex justify-center drop-shadow-xl">
+      <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[6rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <Link href="/">
           <Image
             src={logoDark}
             alt="Leigh Dahlin logo"
             priority={true}
-            height={40}
-            width={40}
-            className="dark:hidden"
+            height={80}
+            width={80}
+            className="hidden dark:block"
           />
           <Image
             src={logoLight}
             alt="Leigh Dahlin logo"
             priority={true}
-            height={40}
-            width={40}
-            className="hidden dark:block"
+            height={80}
+            width={80}
+            className="dark:hidden"
           />
         </Link>
 
@@ -163,7 +163,7 @@ export default function Navbar() {
       {mounted && navOpen && (
         <div
           id="mobile-nav"
-          className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white dark:bg-dark-blue ${
+          className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white dark:bg-soft-black ${
             shouldAnimate ? 'translate-x-0' : 'translate-x-full'
           } `}
         >
@@ -220,7 +220,7 @@ export default function Navbar() {
             </button>
           </div>
           <div
-            className={`flex flex-col h-screen bg-off-white dark:bg-dark-blue`}
+            className={`flex flex-col h-screen bg-off-white dark:bg-soft-black`}
           >
             <div className="h-screen border-t-[0.5px] border-customGrey">
               <div className="flex flex-col">

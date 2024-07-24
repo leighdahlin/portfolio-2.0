@@ -60,6 +60,7 @@ type PersonalProject = {
   title: string;
   description: string;
   comingSoon: boolean;
+  link: string;
 };
 
 export default function ClientSection() {
@@ -176,12 +177,13 @@ export default function ClientSection() {
       title: 'Innovative Beer Discovery Platform',
       description:
         'Designing and developing an interactive website to educate users about different beers and help them find local breweries. Brew Hoperator offers an engaging user experience with comprehensive information and intuitive navigation.',
-      comingSoon: true,
+      comingSoon: false,
+      link: 'https://www.brewhoperator.com/',
     },
   ];
 
   return (
-    <div className=" bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center lg:items-stretch scroll-mt-[76px]">
+    <div className=" bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center lg:items-stretch scroll-mt-[76px]">
       <div className="flex flex-col mx-[0.625rem] max-w-[85.75rem] lg:mx-[1.5625rem] gap-[4rem] w-full md:py-[2rem]">
         <div className="flex flex-col lg:flex-row gap-[2rem] lg:justify-between w-full">
           <div className="flex flex-col gap-[1rem]">
@@ -202,7 +204,7 @@ export default function ClientSection() {
                   alt={p.clientBackgroundAlt}
                   width={720}
                   height={442}
-                  className="w-full min-h-[442px] object-cover"
+                  className="w-full min-h-[442px] object-cover rounded-md"
                 />
                 <div className="h-full max-w-[720px] absolute top-0 px-[2.5rem] py-[2rem] flex flex-col justify-between">
                   <Image
@@ -250,7 +252,7 @@ export default function ClientSection() {
                   alt={p.projectName}
                   width={720}
                   height={442}
-                  className="w-full min-h-[442px] object-cover"
+                  className="w-full min-h-[442px] object-cover rounded-md"
                 />
                 <div className="h-full max-w-[720px] absolute top-0 px-[2.5rem] py-[2rem] flex flex-col justify-between">
                   <Image
@@ -278,6 +280,13 @@ export default function ClientSection() {
                   >
                     View Project
                   </button> */}
+                  <Link
+                    href={p.link}
+                    className="p-[1rem] bg-transparent text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-off-white dark:hover:bg-off-white hover:text-dark-blue dark:hover:text-dark-blue my-[1rem] border border-off-white w-fit min-w-[175px]"
+                    target="_blank"
+                  >
+                    View Website
+                  </Link>
                 </div>
               </div>
             ))}
@@ -294,7 +303,7 @@ export default function ClientSection() {
             >
               <div
                 ref={modalRef}
-                className="bg-off-white dark:bg-dark-blue opacity-100 max-w-[85.75rem] max-h-[100vh] mx-auto relative m-[3rem] p-[1rem] md:p-[2.5rem] overflow-y-scroll"
+                className="bg-off-white dark:bg-soft-black opacity-100 max-w-[85.75rem] max-h-[100vh] mx-auto relative m-[3rem] p-[1rem] md:p-[2.5rem] overflow-y-scroll"
               >
                 <button
                   type="button"
@@ -372,7 +381,7 @@ export default function ClientSection() {
                     </div>
                   </div>
                   <div className="flex flex-col lg:flex-row gap-[1rem] relative">
-                    <div className="sticky top-0 bg-off-white dark:bg-dark-blue">
+                    <div className="sticky top-0 bg-off-white dark:bg-soft-black">
                       <div
                         data-id="dark mode toggle"
                         className="flex lg:justify-center items-center gap-[1rem]"

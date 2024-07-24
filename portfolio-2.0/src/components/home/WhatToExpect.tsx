@@ -47,7 +47,7 @@ export default function WhatToExpect() {
   return (
     <div
       id="whattoexpect"
-      className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center py-[2rem] scroll-mt-[76px]"
+      className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center py-[2rem] scroll-mt-[76px]"
     >
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem] overflow-hidden">
         <h1 className="uppercase font-semibold leading-8 text-[1.5rem] mb-[0.5rem] text-black dark:text-off-white">

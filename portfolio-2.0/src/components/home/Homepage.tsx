@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeVideo from './HomeVideo';
 import AboutBlocks from './AboutBlocks';
-import DigitalIdentityBlock from './DigitalIdentityBlock';
+// import DigitalIdentityBlock from './DigitalIdentityBlock';
 // import EmpowerJourneyBlock from './DigitalJourneyBlock';
 import WhatToExpect from './WhatToExpect';
 import Faq from './Faq';
@@ -9,10 +9,10 @@ import Faq from './Faq';
 
 export default function Home() {
   return (
-    <div className="block bg-off-white dark:bg-dark-blue">
+    <div className="block bg-off-white dark:bg-soft-black">
       <HomeVideo />
       <AboutBlocks />
-      <DigitalIdentityBlock />
+      {/* <DigitalIdentityBlock /> */}
       <WhatToExpect />
       <Faq />
       {/* <EmpowerJourneyBlock /> */}

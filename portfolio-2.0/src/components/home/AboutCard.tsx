@@ -36,7 +36,7 @@ export default function AboutCard({ aboutCardInfo }: AboutCardProps) {
         </h2>
         <p className="mt-[0.5rem]">{aboutCardInfo.description}</p>
       </div>
-      {/* <button className="p-[1rem] bg-off-white dark:bg-dark-blue text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue my-[1rem] border border-dark-blue dark:border-off-white md:w-fit md:min-w-[175px]">
+      {/* <button className="p-[1rem] bg-off-white dark:bg-soft-black text-dark-blue dark:text-off-white text-sm md:text-base rounded-[.25rem] font-medium tracking-[.1rem] hover:bg-dark-blue dark:hover:bg-off-white hover:text-off-white dark:hover:text-dark-blue my-[1rem] border border-dark-blue dark:border-off-white md:w-fit md:min-w-[175px]">
         {aboutCardInfo.buttonText}
       </button> */}
     </div>

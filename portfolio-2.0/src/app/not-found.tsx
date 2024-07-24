@@ -4,7 +4,7 @@ import GlobalLayout from '@/components/GlobalLayout';
 export default function NotFound() {
   return (
     <GlobalLayout>
-      <div className="bg-off-white dark:bg-dark-blue flex flex-col gap-[2rem] items-center justify-center h-full">
+      <div className="bg-off-white dark:bg-soft-black flex flex-col gap-[2rem] items-center justify-center h-full">
         <p className="text-black dark:text-off-white">Page Not Found</p>
         <a
           href="/"

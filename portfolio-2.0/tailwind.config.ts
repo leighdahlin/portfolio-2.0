@@ -19,6 +19,7 @@ const config: Config = {
       peach: '#CE9077',
       transparent: 'transparent',
       black: '#000000',
+      'soft-black': '#121212',
       white: '#FFFFFF',
       golden: '#D8981F',
       'hover-golden': 'rgba(216, 152, 31, 0.75)',

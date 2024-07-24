@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function PortfolioHeader() {
   return (
-    <div className="flex flex-col lg:flex-row bg-gradient-to-b lg:bg-gradient-to-r dark:bg-transparent dark:bg-dark-blue">
+    <div className="flex flex-col lg:flex-row bg-gradient-to-b lg:bg-gradient-to-r dark:bg-transparent dark:bg-soft-black">
       <Image
         src={headerImage}
         alt="a laptop next to a cup of coffee and some leaves"

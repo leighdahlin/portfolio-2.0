@@ -5,7 +5,7 @@ export default function FormSection() {
   return (
     <div
       data-id="form-section"
-      className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center py-[2rem]"
+      className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center py-[2rem]"
     >
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] md:mx-[1.5625rem]">
         <div className="flex flex-col md:flex-row md:border-b md:border-customGrey md:pb-[2rem] mx-[0.625rem]">
