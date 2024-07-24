@@ -12,12 +12,12 @@ export default function HomeVideo() {
   return (
     <div className="bg-off-white dark:bg-dark-blue mx-[auto] w-full flex items-center justify-center mb-[2.5rem]">
       <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
-        <div className="flex w-full flex-col md:flex-ro ">
+        <div className="w-full grid grid-cols-12 gap-4">
           <div
             data-id="top-text"
-            className="block box-border text-black dark:text-off-white mx-[0.625rem] md:mx-[0rem]"
+            className="block box-border text-black dark:text-off-white mx-[0.625rem] md:mx-[0rem] col-start-1 col-span-12"
           >
-            <div className="block box-border bg-off-white dark:bg-dark-blue w-full md:absolute md:top-[9.4375rem] md:w-[16rem] md:z-20">
+            <div className="block box-border bg-off-white dark:bg-dark-blue w-full md:absolute md:top-[14rem] md:w-[16rem] md:z-20">
               <h1 className="uppercase font-semibold leading-8 text-[1.5rem] pt-[1.5rem] md:pt-[2rem] md:pr-[1rem] tracking-[.1rem] text-center md:text-left max-w-[240px] mx-auto">
                 Your vision, My expertise
               </h1>
@@ -30,7 +30,7 @@ export default function HomeVideo() {
               </p>
             </div>
           </div>
-          <div className="box-border self-end w-full">
+          <div className="box-border self-end w-full col-start-2 col-span-11">
             <div data-id="video" className="relative">
               <div className="bg-black">
                 <video
