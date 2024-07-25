@@ -1,10 +1,11 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Flickity from 'flickity';
 
 export default function WhatToExpect() {
-  //progress bar example
-  //https://codepen.io/desandro/pen/obpVGa
+  const flickityRef = useRef(null);
+
   const slides = [
     {
       title: 'Initial Consultation',
@@ -43,6 +44,23 @@ export default function WhatToExpect() {
       text: 'Regular progress updates keep you informed and provide opportunities for input.',
     },
   ];
+
+  useEffect(() => {
+    const Flickity = require('flickity-imagesloaded');
+    const flkty = new Flickity('.main-carousel', {
+      freeScroll: true,
+      imagesLoaded: true,
+      adaptiveHeight: true,
+      prevNextButtons: true,
+      cellAlign: 'left',
+      wrapAround: true,
+    });
+
+    // Cleanup event listeners and destroy Flickity instance on component unmount
+    return () => {
+      flkty.destroy();
+    };
+  }, []); // Empty dependency array ensures the effect runs only once on mount
 
   return (
     <div
