@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <div className="block w-full bg-off-white">
       <ImageWithTextSection
-        designSide="left"
+        designSide="right"
         topTitle="Contact Leigh"
         title="Book Your Project or Get In Touch"
         paragraph="Update to something about contacting me or for all other inquires contact@leighdahlin.com."

@@ -17,16 +17,16 @@ export default function Navbar() {
   const links = [
     {
       displayName: 'Portfolio',
-      link: '/portfolio/',
+      link: '/portfolio',
     },
     // {
     //   displayName: 'About',
     //   link: '/about/',
     // },
-    // {
-    //   displayName: 'Services',
-    //   link: '/services/',
-    // },
+    {
+      displayName: 'Work With Me',
+      link: '/work-with-me',
+    },
   ];
 
   useEffect(() => {
