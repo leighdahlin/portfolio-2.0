@@ -10,14 +10,14 @@ type ImageWithTextSectionProps = {
   topTitle: string | null;
   title: string;
   paragraph: string;
-  buttonText: string;
+  buttonText: string | null;
+  buttonLink: string | null;
   imageSrc: StaticImageData;
   imageSrcMobile: StaticImageData | null;
   imageAlt: string;
   imageWidth: number;
   imageHeight: number;
   imageClass: string | null;
-  buttonLink: string;
 };
 
 export default function ImageWithTextSection({
@@ -36,38 +36,27 @@ export default function ImageWithTextSection({
 }: ImageWithTextSectionProps) {
   const isMobile = useIsMobile(1024);
   const image = !!imageSrcMobile && isMobile ? imageSrcMobile : imageSrc;
+  const includeButton = buttonLink && buttonText;
 
   return (
     <section
       className={`w-full pt-[2rem] lg:pt-0 pb-[2rem] flex ${designSide === 'left' ? 'flex-col-reverse' : 'flex-col justify-between'} lg:flex-row items-center gap-[1rem]`}
     >
-      {designSide === 'left' && (
-        <Image
-          src={image}
-          alt={imageAlt}
-          width={imageWidth}
-          height={imageHeight}
-          className={`${imageClass} sm:max-w-[500px] lg:max-w-[55%]`}
-        />
-      )}
+      <Image
+        src={image}
+        alt={imageAlt}
+        width={imageWidth}
+        height={imageHeight}
+        className={`${designSide === 'left' ? 'order-first' : 'order-last'} ${imageClass} sm:max-w-[500px] lg:max-w-[55%]`}
+      />
       <div
-        className={`flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-[8px] sm:max-w-[400px] ${designSide === 'left' ? 'mx-auto' : ''}`}
+        className={`flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-[8px] ${designSide === 'left' ? 'mx-auto' : ''}`}
       >
         <h2 className="uppercase">{topTitle}</h2>
-        <h1>{title}</h1>
-        <p className="pb-[15px]">{paragraph}</p>
-        {/* TO DO: CHANGE BUTTON LINK TO PRICING */}
-        <ThreeDButton text={buttonText} link={buttonLink} />
+        <h1 className="sm:max-w-[400px]">{title}</h1>
+        <p className="pb-[15px] max-w-[500px]">{paragraph}</p>
+        {includeButton && <ThreeDButton text={buttonText} link={buttonLink} />}
       </div>
-      {designSide === 'right' && (
-        <Image
-          src={image}
-          alt={imageAlt}
-          width={imageWidth}
-          height={imageHeight}
-          className={`${imageClass} sm:max-w-[500px] lg:max-w-[50%]`}
-        />
-      )}
     </section>
   );
 }
