@@ -1,13 +1,13 @@
 import React from 'react';
-import { LetsConntect, FreeConstulation } from '../home/Form';
+// import { LetsConntect, FreeConstulation } from '../home/Form';
 
 export default function ContactPage() {
   return (
     <div className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center pb-[2rem]">
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between w-full max-w-[85.75rem] md:mx-[1.5625rem] ">
         <div className="mt-[30px] flex flex-col gap-[4rem] max-w-[500px] mx-[0.625rem]">
-          <LetsConntect />
-          <FreeConstulation />
+          {/* <LetsConntect />
+          <FreeConstulation /> */}
         </div>
         <div
           id="contact"

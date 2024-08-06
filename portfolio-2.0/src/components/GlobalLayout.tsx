@@ -1,5 +1,5 @@
 import React from 'react';
-import { montserrat } from '@/app/fonts';
+import { nunito } from '@/app/fonts';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -11,11 +11,13 @@ export default function GlobalLayout({
 }) {
   return (
     <>
-      <div className={montserrat.className}>
-        <div className="flex flex-col justify-between min-h-screen bg-off-white dark:bg-soft-black">
+      <div className={nunito.className}>
+        <div className="flex flex-col justify-between min-h-screen bg-off-white">
           <Navbar />
-          <main className="block min-h-[100vh - 291px] bg-off-white dark:bg-soft-black">
-            {children}
+          <main className="block min-h-[100vh - 291px] w-full flex items-center justify-center">
+            <div className="flex flex-col justify-center w-full max-w-[85.75rem] mx-[0.625rem] md:mx-[1.5625rem]">
+              {children}
+            </div>
           </main>
           <Footer />
         </div>

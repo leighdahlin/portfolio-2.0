@@ -28,6 +28,7 @@ const config: Config = {
       customGrey: '#DACDCA',
       customGreyDarker: '#B2ABAA',
       overlay: 'rgba(0,0,0,.75)',
+      darkGreen: '#27545B',
     },
     backgroundImage: {
       'gradient-to-r': 'linear-gradient(to right, #DACDCA, #FAFAFA)',
