@@ -17,6 +17,7 @@ type ImageWithTextSectionProps = {
   imageWidth: number;
   imageHeight: number;
   imageClass: string | null;
+  buttonLink: string;
 };
 
 export default function ImageWithTextSection({
@@ -31,6 +32,7 @@ export default function ImageWithTextSection({
   imageWidth,
   imageHeight,
   imageClass,
+  buttonLink,
 }: ImageWithTextSectionProps) {
   const isMobile = useIsMobile(1024);
   const image = !!imageSrcMobile && isMobile ? imageSrcMobile : imageSrc;
@@ -45,17 +47,17 @@ export default function ImageWithTextSection({
           alt={imageAlt}
           width={imageWidth}
           height={imageHeight}
-          className={`${imageClass} sm:max-w-[500px] lg:max-w-[50%]`}
+          className={`${imageClass} sm:max-w-[500px] lg:max-w-[55%]`}
         />
       )}
       <div
-        className={`flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-[8px] sm:max-w-[500px] ${designSide === 'left' ? 'mx-auto' : ''}`}
+        className={`flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-[8px] sm:max-w-[400px] ${designSide === 'left' ? 'mx-auto' : ''}`}
       >
         <h2 className="uppercase">{topTitle}</h2>
         <h1>{title}</h1>
         <p className="pb-[15px]">{paragraph}</p>
         {/* TO DO: CHANGE BUTTON LINK TO PRICING */}
-        <ThreeDButton text={buttonText} link="/portfolio" />
+        <ThreeDButton text={buttonText} link={buttonLink} />
       </div>
       {designSide === 'right' && (
         <Image

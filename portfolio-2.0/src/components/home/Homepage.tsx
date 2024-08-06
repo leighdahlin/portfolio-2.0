@@ -19,6 +19,7 @@ export default function Home() {
         imageWidth={1350}
         imageHeight={932}
         imageClass={null}
+        buttonLink="/portfolio"
       />
       <ImageWithTextSection
         designSide="left"
@@ -32,6 +33,7 @@ export default function Home() {
         imageWidth={934}
         imageHeight={1050}
         imageClass="pt-[1rem] lg:pt-0 max-h-[600px] w-auto lg:w-[500px]"
+        buttonLink="/about"
       />
     </div>
   );
