@@ -84,7 +84,7 @@ export function LetsConntect() {
             className="hidden dark:block"
           />
         </a>
-        <a href="mailto:leigh@leighdahlin.com">
+        <a href="mailto:leigh.dahlin@gmail.com">
           <Image
             src="/images/footer-mail.png"
             height={35}
