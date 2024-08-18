@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import ThreeDButtonLink from './ThreeDButtonLink';
 import useIsMobile from '@/hooks/useIsMobile';
@@ -35,7 +35,9 @@ export default function ImageWithTextSection({
   buttonLink,
 }: ImageWithTextSectionProps) {
   const isMobile = useIsMobile(1024);
-  const image = !!imageSrcMobile && isMobile ? imageSrcMobile : imageSrc;
+  const image = useMemo(() => {
+    return !!imageSrcMobile && isMobile ? imageSrcMobile : imageSrc;
+  }, [imageSrc, imageSrcMobile, isMobile]);
   const includeButton = buttonLink && buttonText;
 
   return (

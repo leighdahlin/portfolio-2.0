@@ -13,7 +13,7 @@ export default function PackagesAtAGlance() {
     {
       secondaryTitle: 'Full Service',
       secondaryTitleSubtext: 'Starting at $1,000',
-      title: 'Website Design + Development Package',
+      title: 'Design + Development Package',
       link: '/work-with-me/?package=dev-and-design',
       bulletPoints: [
         'Website Design (up to 10 pages)',
@@ -61,7 +61,6 @@ export default function PackagesAtAGlance() {
   ];
   return (
     <Swiper
-      spaceBetween={50}
       slidesPerView="auto"
       loop={true}
       modules={[Pagination]}
@@ -71,9 +70,9 @@ export default function PackagesAtAGlance() {
       className="packages-at-a-glance"
     >
       {slides.map((s) => (
-        <SwiperSlide key={s.title}>
-          <div className="bg-off-white rounded-xl max-w-[550px] h-[344px] p-[25px] border border-darkGreen flex flex-col gap-[20px] mb-[40px]">
-            <div className="flex justify-between">
+        <SwiperSlide key={s.title} className="mx-auto">
+          <div className="bg-off-white rounded-xl w-full max-w-[450px] lg:max-w-[550px] h-full lg:h-[310px] p-[25px] border border-darkGreen flex flex-col gap-[20px] mb-[30px] lg:mb-[40px] mt-[40px] mx-auto">
+            <div className="flex flex-col sm:flex-row gap-[1rem] justify-between">
               <div className="flex flex-col">
                 <h3 className="uppercase">{s.secondaryTitle}</h3>
                 <p className="text-[12px]">{s.secondaryTitleSubtext}</p>
@@ -88,7 +87,7 @@ export default function PackagesAtAGlance() {
                 hoverTextColor="off-white"
               />
             </div>
-            <h1 className="text-[2rem]">{s.title}</h1>
+            <h1 className="text-[1.65rem] lg:text-[2rem]">{s.title}</h1>
             <ul>
               {s.bulletPoints.map((p) => (
                 <li key={p} className="flex gap-[8px] pb-[8px] items-center">
@@ -97,7 +96,7 @@ export default function PackagesAtAGlance() {
                     alt="check"
                     width={60}
                     height={60}
-                    className="w-[25px] h-[25px]"
+                    className="w-[20px] h-[20px] lg:w-[25px] lg:h-[25px]"
                   />
                   <p>{p}</p>
                 </li>

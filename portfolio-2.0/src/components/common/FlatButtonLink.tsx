@@ -22,7 +22,7 @@ export default function FlatButtonLink({
   return (
     <Link
       href={link}
-      className={`bg-${bgColor} hover:bg-${hoverBgColor} rounded-md text-${textColor} hover:text-${hoverTextColor} ${border ? `border border-${textColor}` : ''} min-w-[175px] flex items-center justify-center`}
+      className={`w-fit py-[8px] bg-${bgColor} hover:bg-${hoverBgColor} rounded-md text-${textColor} hover:text-${hoverTextColor} ${border ? `border border-${textColor}` : ''} min-w-[175px] flex items-center justify-center`}
     >
       {text}
     </Link>

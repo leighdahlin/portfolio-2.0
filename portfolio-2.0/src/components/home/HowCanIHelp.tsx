@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import Image from 'next/image';
 import useIsMobile from '@/hooks/useIsMobile';
 
@@ -8,25 +8,27 @@ import PackagesAtAGlance from '../common/PackagesAtAGlance';
 import ThreeDButtonLink from '../common/ThreeDButtonLink';
 
 import sectionImage from './img/how-can-i-help.png';
-import sectionImageMobile from './img/how-can-i-help.png';
+import sectionImageMobile from './img/how-can-i-help-mobile.png';
 
 export default function HowCanIHelp() {
   const isMobile = useIsMobile(1024);
-  const image = isMobile ? sectionImageMobile : sectionImage;
+  const image = useMemo(() => {
+    return isMobile ? sectionImageMobile : sectionImage;
+  }, [isMobile]);
 
   return (
     <section
-      className={`w-full pt-[2rem] lg:pt-0 pb-[2rem] flex flex-col lg:flex-row items-center gap-[1rem]`}
+      className={`w-full pt-[2rem] lg:pt-0 flex flex-col lg:flex-row items-center lg:gap-[1rem]`}
     >
-      <div className="relative order-last lg:max-w-[55%]">
+      <div className="relative order-last max-w-[600px] lg:max-w-[60%]">
         <Image
           src={image}
           alt="abstract design"
           width={1350}
           height={932}
-          className={``}
+          className={`hidden sm:block`}
         />
-        <div className="absolute top-[15%] right-[10%] max-w-[550px]">
+        <div className="w-full h-full sm:absolute sm:top-0 flex items-center justify-center">
           <PackagesAtAGlance />
         </div>
       </div>
