@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-type ThreeDButtonProps = {
+export interface ButtonProps {
   text: string;
   link: string;
-};
+}
 
-export default function ThreeDButton({ text, link }: ThreeDButtonProps) {
+export default function ThreeDButtonLink({ text, link }: ButtonProps) {
   return (
     <div className="w-content min-w-[175px] group relative transition duration-300 before:bg-darkGreen before:rounded-[12px] before:h-[calc(100%+3px)] hover:before:h-[calc(100%+5px)] before:w-[calc(100%+3.5px)] hover:before:w-[calc(100%+5.5px)] before:absolute before:left-0 before:top-0 before:transition before:transform before:translate-x-[2px] before:translate-y-[2px] before:ease-in-out">
       <Link

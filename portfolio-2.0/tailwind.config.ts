@@ -33,7 +33,7 @@ const config: Config = {
     backgroundImage: {
       'gradient-to-r': 'linear-gradient(to right, #DACDCA, #FAFAFA)',
       'gradient-to-b': 'linear-gradient(to bottom, #DACDCA, #FAFAFA)',
-      transparent:
+      transparentBgImage:
         'linear-gradient(to bottom, rgba(213, 205, 203, 0), rgba(250, 250, 250, 0))',
     },
     boxShadow: {

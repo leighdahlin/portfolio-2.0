@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import ThreeDButton from './ThreeDButton';
+import ThreeDButtonLink from './ThreeDButtonLink';
 import useIsMobile from '@/hooks/useIsMobile';
 
-type ImageWithTextSectionProps = {
+interface ImageWithTextSectionProps {
   designSide: 'right' | 'left';
   topTitle: string | null;
   title: string;
@@ -18,7 +18,7 @@ type ImageWithTextSectionProps = {
   imageWidth: number;
   imageHeight: number;
   imageClass: string | null;
-};
+}
 
 export default function ImageWithTextSection({
   designSide,
@@ -53,9 +53,11 @@ export default function ImageWithTextSection({
         className={`flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-[8px] ${designSide === 'left' ? 'mx-auto' : ''}`}
       >
         <h2 className="uppercase">{topTitle}</h2>
-        <h1 className="sm:max-w-[400px]">{title}</h1>
+        <h1 className="sm:max-w-[500px]">{title}</h1>
         <p className="pb-[15px] max-w-[500px]">{paragraph}</p>
-        {includeButton && <ThreeDButton text={buttonText} link={buttonLink} />}
+        {includeButton && (
+          <ThreeDButtonLink text={buttonText} link={buttonLink} />
+        )}
       </div>
     </section>
   );

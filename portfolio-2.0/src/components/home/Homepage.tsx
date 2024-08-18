@@ -3,6 +3,9 @@ import ImageWithTextSection from '../common/ImageWithTextSection';
 import headerImage from './img/homepage-header-2.png';
 import headerImageMobile from './img/homepage-header-mobile.png';
 import meetLeighImage from './img/meet-leigh.png';
+import { lazy } from 'react';
+
+const HowCanIHelp = lazy(() => import('./HowCanIHelp'));
 
 export default function Home() {
   return (
@@ -35,6 +38,7 @@ export default function Home() {
         imageClass="pt-[1rem] lg:pt-0 max-h-[600px] w-auto lg:w-[500px]"
         buttonLink="/about"
       />
+      <HowCanIHelp />
     </div>
   );
 }
