@@ -20,13 +20,13 @@ export default function HowCanIHelp() {
     <section
       className={`w-full pt-[2rem] lg:pt-0 flex flex-col lg:flex-row items-center lg:gap-[1rem]`}
     >
-      <div className="relative order-last max-w-[600px] lg:max-w-[60%]">
+      <div className="relative order-last w-full lg:max-w-[60%]">
         <Image
           src={image}
           alt="abstract design"
           width={1350}
           height={932}
-          className={`hidden sm:block`}
+          className={`hidden sm:block max-w-[600px]`}
         />
         <div className="w-full h-full sm:absolute sm:top-0 flex items-center justify-center">
           <PackagesAtAGlance />
