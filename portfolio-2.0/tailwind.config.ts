@@ -39,6 +39,15 @@ const config: Config = {
     boxShadow: {
       'custom-light-separation': '0 2px 12px rgba(0, 0, 0, 0.15)',
     },
+    animation: {
+      'pulse-slow': 'pulse-slow 2s ease-in-out infinite',
+    },
+    keyframes: {
+      'pulse-slow': {
+        '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+        '50%': { transform: 'scale(1.05)', opacity: '0.8' },
+      },
+    },
   },
   plugins: [],
 };
