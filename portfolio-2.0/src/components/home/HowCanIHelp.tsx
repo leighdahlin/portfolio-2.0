@@ -4,8 +4,8 @@ import React, { useMemo } from 'react';
 import Image from 'next/image';
 import useIsMobile from '@/hooks/useIsMobile';
 
-import PackagesAtAGlance from '../common/PackagesAtAGlance';
-import ThreeDButtonLink from '../common/ThreeDButtonLink';
+import PackagesAtAGlance from '../common/sections/PackagesAtAGlance';
+import ThreeDButtonLink from '../common/buttons/ThreeDButtonLink';
 
 import sectionImage from './img/how-can-i-help.png';
 import sectionImageMobile from './img/how-can-i-help-mobile.png';

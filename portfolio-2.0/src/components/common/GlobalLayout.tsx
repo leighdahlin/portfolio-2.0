@@ -1,8 +1,8 @@
 import React from 'react';
 import { nunito } from '@/app/fonts';
 
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './nav/Navbar';
+import Footer from './nav/Footer';
 
 export default function GlobalLayout({
   children,

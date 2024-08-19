@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import ThreeDButtonLink from './ThreeDButtonLink';
+import ThreeDButtonLink from '../buttons/ThreeDButtonLink';
 import useIsMobile from '@/hooks/useIsMobile';
 
 interface ImageWithTextSectionProps {

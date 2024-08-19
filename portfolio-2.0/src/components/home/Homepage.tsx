@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageWithTextSection from '../common/ImageWithTextSection';
+import ImageWithTextSection from '../common/sections/ImageWithTextSection';
 import headerImage from './img/homepage-header-2.png';
 import headerImageMobile from './img/homepage-header-mobile.png';
 import meetLeighImage from './img/meet-leigh.png';

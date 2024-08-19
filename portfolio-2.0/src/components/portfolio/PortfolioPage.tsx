@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageWithTextSection from '../common/ImageWithTextSection';
+import ImageWithTextSection from '../common/sections/ImageWithTextSection';
 import ClientSection from './ClientsSection';
 import portfolioHeaderImage from './img/portfolio-header.png';
 import mobileHeaderImage from './img/portfolio-header-mobile.png';

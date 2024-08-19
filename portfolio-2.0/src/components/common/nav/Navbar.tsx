@@ -1,9 +1,9 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import logoDark from './img/logo-dark.png';
-import logoLight from './img/logo-light.png';
-import ContactButton from './ContactButton';
+import logoWithText from './img/logo-text.png';
+import logo from './img/logo.png';
+import OutlinedButtonLink from '../buttons/OutlinedButtonLink';
 import useIsMobile from '@/hooks/useIsMobile';
 import Link from 'next/link';
 
@@ -16,13 +16,13 @@ export default function Navbar() {
 
   const links = [
     {
+      displayName: 'About',
+      link: '/about',
+    },
+    {
       displayName: 'Portfolio',
       link: '/portfolio',
     },
-    // {
-    //   displayName: 'About',
-    //   link: '/about/',
-    // },
     {
       displayName: 'Work With Me',
       link: '/work-with-me',
@@ -78,31 +78,23 @@ export default function Navbar() {
   }, [navOpen]); // Empty dependency array ensures this effect runs only once after the initial render
 
   return (
-    <header className="sticky top-0 z-40 shadow-lg bg-white dark:bg-soft-black flex justify-center drop-shadow-xl">
+    <header className="sticky top-0 z-40 shadow-lg bg-white flex justify-center drop-shadow-xl">
       <div className="flex flex-row justify-between w-full max-w-[85.75rem] items-center relative h-[6rem] mx-[0.625rem] md:mx-[1.5625rem]">
         <Link href="/">
           <Image
-            src={logoDark}
-            alt="Leigh Dahlin logo"
+            src={logoWithText}
+            alt="logo"
             priority={true}
-            height={80}
-            width={80}
-            className="hidden dark:block"
-          />
-          <Image
-            src={logoLight}
-            alt="Leigh Dahlin logo"
-            priority={true}
-            height={80}
-            width={80}
-            className="dark:hidden"
+            height={400}
+            width={500}
+            className="w-[100px]"
           />
         </Link>
 
         <nav className="flex flex-row space-x-8 items-center">
           {mounted &&
             (!isMobile ? (
-              <ul className="hidden sm:flex justify-center items-center list-none gap-[35px] text-dark-blue dark:text-off-white">
+              <ul className="hidden sm:flex justify-center items-center list-none gap-[35px] text-dark-blue">
                 {links.map((l) => (
                   <li key={l.displayName} className="group relative">
                     <Link
@@ -111,10 +103,10 @@ export default function Navbar() {
                     >
                       {l.displayName}
                     </Link>
-                    <div className="h-[.25rem] transition-[width] duration-250 ease-in-out w-0 bg-golden absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-[1.5rem] group-hover:right-[auto]" />
+                    <div className="h-[.25rem] transition-[width] duration-250 ease-in-out w-0 bg-customGrey absolute block right-auto bottom-[-.3125rem] top-[auto] group-hover:w-[1.5rem] group-hover:right-[auto]" />
                   </li>
                 ))}
-                <li>
+                {/* <li>
                   <div
                     data-id="dark mode toggle"
                     className="flex justify-center items-center gap-[1rem]"
@@ -141,9 +133,9 @@ export default function Navbar() {
                     </label>
                     <p className="text-black dark:text-off-white">Dark Mode</p>
                   </div>
-                </li>
+                </li> */}
                 <li>
-                  <ContactButton color="gold" />
+                  <OutlinedButtonLink text="Contact" link="/contact" />
                 </li>
               </ul>
             ) : (
@@ -153,9 +145,9 @@ export default function Navbar() {
                 }}
                 className="flex flex-col items-center justify-between w-[35px] h-[25px] p-0"
               >
-                <div className="bg-dark-blue dark:bg-off-white h-[2px] w-full " />
-                <div className="bg-dark-blue dark:bg-off-white h-[2px] w-full " />
-                <div className="bg-dark-blue dark:bg-off-white h-[2px] w-full " />
+                <div className="bg-dark-blue h-[2px] w-full " />
+                <div className="bg-dark-blue h-[2px] w-full " />
+                <div className="bg-dark-blue h-[2px] w-full " />
               </button>
             ))}
         </nav>
@@ -163,7 +155,7 @@ export default function Navbar() {
       {mounted && navOpen && (
         <div
           id="mobile-nav"
-          className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white dark:bg-soft-black ${
+          className={`fixed top-0 left-0 right-0 bottom-0 z-[105] flex flex-col transition-transform duration-300 ease-in-out bg-off-white ${
             shouldAnimate ? 'translate-x-0' : 'translate-x-full'
           } `}
         >
@@ -175,20 +167,12 @@ export default function Navbar() {
               }}
             >
               <Image
-                src={logoDark}
-                alt="Leigh Dahlin logo"
+                src={logo}
+                alt="logo"
                 priority={true}
-                height={35}
-                width={35}
-                className="dark:hidden"
-              />
-              <Image
-                src={logoLight}
-                alt="Leigh Dahlin logo"
-                priority={true}
-                height={35}
-                width={35}
-                className="hidden dark:block"
+                height={400}
+                width={500}
+                className="w-[50px]"
               />
             </Link>
             <button
@@ -205,7 +189,7 @@ export default function Navbar() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-15 w-15 text-dark-blue dark:text-off-white"
+                className="h-15 w-15 text-dark-blue"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -219,21 +203,19 @@ export default function Navbar() {
               </svg>{' '}
             </button>
           </div>
-          <div
-            className={`flex flex-col h-screen bg-off-white dark:bg-soft-black`}
-          >
+          <div className={`flex flex-col h-screen bg-off-white`}>
             <div className="h-screen border-t-[0.5px] border-customGrey">
               <div className="flex flex-col">
                 {links.map((l) => (
                   <a
                     key={l.displayName}
                     href={l.link}
-                    className="p-[1rem] text-dark-blue dark:text-off-white border-b border-customGrey"
+                    className="p-[1rem] text-dark-blue border-b border-customGrey"
                   >
                     {l.displayName}
                   </a>
                 ))}
-                <div
+                {/* <div
                   data-id="dark mode toggle"
                   className="flex justify-center items-center gap-[1rem] p-[1rem]"
                 >
@@ -257,15 +239,17 @@ export default function Navbar() {
                       }`}
                     ></span>
                   </label>
-                  <p className="text-black dark:text-off-white">Dark Mode</p>
+                  <p className="text-black">Dark Mode</p>
+                </div> */}
+                <div className="my-[0.5rem] mx-[0.35rem]">
+                  <OutlinedButtonLink
+                    text="Contact"
+                    link="/contact"
+                    additionalFunction={() => {
+                      setNavOpen(false);
+                    }}
+                  />
                 </div>
-                <ContactButton
-                  color="gold"
-                  className="m-[0.875rem] md:m-[1.5625rem]"
-                  additionalFunction={() => {
-                    setNavOpen(false);
-                  }}
-                />
               </div>
             </div>
           </div>

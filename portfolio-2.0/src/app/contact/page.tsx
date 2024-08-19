@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalLayout from '@/components/GlobalLayout';
+import GlobalLayout from '@/components/common/GlobalLayout';
 import ContactPage from '@/components/contact/ContactPage';
 
 export async function generateMetadata() {

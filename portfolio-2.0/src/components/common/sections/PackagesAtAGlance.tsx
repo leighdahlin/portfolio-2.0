@@ -2,11 +2,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
-import FlatButtonLink from './FlatButtonLink';
+import OutlinedButtonLink from '../buttons/OutlinedButtonLink';
 import Image from 'next/image';
 import checkImage from './img/circle-check.png';
-
-// import PackagesAtAGlanceSlide from './PackagesAtAGlanceSlide';
 
 export default function PackagesAtAGlance() {
   const slides = [
@@ -77,15 +75,7 @@ export default function PackagesAtAGlance() {
                 <h3 className="uppercase">{s.secondaryTitle}</h3>
                 <p className="text-[12px]">{s.secondaryTitleSubtext}</p>
               </div>
-              <FlatButtonLink
-                text="Learn More"
-                link={s.link}
-                bgColor={'transparent'}
-                hoverBgColor={'darkGreen'}
-                border={true}
-                textColor="darkGreen"
-                hoverTextColor="off-white"
-              />
+              <OutlinedButtonLink text="Learn More" link={s.link} />
             </div>
             <h1 className="text-[1.65rem] lg:text-[2rem]">{s.title}</h1>
             <ul>

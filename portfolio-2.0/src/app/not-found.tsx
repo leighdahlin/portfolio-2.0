@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalLayout from '@/components/GlobalLayout';
+import GlobalLayout from '@/components/common/GlobalLayout';
 
 export default function NotFound() {
   return (
