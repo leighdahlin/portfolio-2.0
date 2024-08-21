@@ -1,11 +1,8 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
-import Flickity from 'flickity';
 
 export default function WhatToExpect() {
-  const flickityRef = useRef(null);
-
   const slides = [
     {
       title: 'Initial Consultation',
