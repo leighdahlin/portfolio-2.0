@@ -37,12 +37,14 @@ export default function HowCanIHelp() {
       >
         <h1 className="sm:max-w-[500px]">How Can I Help?</h1>
         <p className="pb-[15px] max-w-[500px]">
-          From website design, hosting setup and a fully coded website, I got
-          you covered! I also have maintenance plans available.
+          Whether you need a stunning design, a fully developed and functional
+          website, or ongoing maintenance to keep things running smoothly, I
+          offer packages to fit your needs. For personalized consulting
+          services, feel free to reach out directly.
         </p>
         <ThreeDButtonLink
-          text="Compare Packages"
-          link="/work-with-me#compare-packages"
+          text="Explore Packages"
+          link="/work-with-me#packages"
         />
       </div>
     </section>

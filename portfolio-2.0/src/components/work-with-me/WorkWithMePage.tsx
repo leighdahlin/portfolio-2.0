@@ -9,16 +9,16 @@ export default function WorkWithMePage() {
       <ImageWithTextSection
         designSide="left"
         topTitle={null}
-        title="My Services"
-        paragraph="From website design, hosting setup and a fully coded website, I got you covered! I also have maintenance plans available."
-        buttonText="Jump To Packages"
+        title="Let's Build Something Great Together"
+        paragraph="Whether you're looking for a stunning website design, seamless hosting setup, or a fully coded and responsive site, I've got you covered! From start to finish, I'm here to turn your vision into a reality. Plus, with flexible maintenance plans, you can ensure your website stays fresh and functional long after launch."
+        buttonText="Book a Free Consultation"
         imageSrc={servicesHeaderImage}
         imageSrcMobile={mobileHeaderImage}
         imageAlt="Leggos on a soft back drop"
         imageWidth={1350}
         imageHeight={932}
         imageClass={null}
-        buttonLink="#packages"
+        buttonLink="/contact"
       />
     </div>
   );

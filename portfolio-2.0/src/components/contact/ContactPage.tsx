@@ -8,17 +8,17 @@ export default function ContactPage() {
     <div className="block w-full bg-off-white">
       <ImageWithTextSection
         designSide="right"
-        topTitle="Contact Leigh"
-        title="Book Your Project or Get In Touch"
-        paragraph="Update to something about contacting me or for all other inquires contact@leighdahlin.com."
-        buttonText="Project Inquire Form"
+        topTitle="Let's Connect"
+        title="Start Your Project or Drop a Line"
+        paragraph="If you're ready to bring your project to life or just have a question, I'm here to help. Whether it's a new website, ongoing support, or any other inquiry, feel free to reach out. For all inquiries, you can also email me directly at contact@leighdahlin.com. I look forward to hearing from you!"
+        buttonText="Get in Touch"
         imageSrc={contactHeaderImage}
         imageSrcMobile={mobileHeaderImage}
         imageAlt="Leggos on a soft back drop"
         imageWidth={1350}
         imageHeight={932}
         imageClass={null}
-        buttonLink="#packages"
+        buttonLink="/contact/#inquiryform"
       />
     </div>
   );
