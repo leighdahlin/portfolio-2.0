@@ -99,7 +99,7 @@ export default function Navbar() {
                   <li key={l.displayName} className="group relative">
                     <Link
                       href={l.link}
-                      className="uppercase font-semibold tracking-[.1rem]"
+                      className="uppercase font-semibold tracking-[.05rem]"
                     >
                       {l.displayName}
                     </Link>
