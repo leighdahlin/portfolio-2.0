@@ -1,16 +1,16 @@
 import React from 'react';
 import GlobalLayout from '@/components/common/GlobalLayout';
-import ContactPage from '@/components/contact/ContactPage';
+import WorkWithMePage from '@/components/work-with-me/WorkWithMePage';
 
 export async function generateMetadata() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   return {
-    title: 'Contact Leigh Dahlin - Frontend Developer & Designer',
+    title: 'Work With Leigh Dahlin - Frontend Developer & Designer',
     description:
       'Contact Leigh Dahlin for expert frontend development and web design services.',
     openGraph: {
-      title: 'Contact Leigh Dahlin - Frontend Developer & Designer',
+      title: 'Work With Leigh Dahlin - Frontend Developer & Designer',
       description:
         'Contact Leigh Dahlin for expert frontend development and web design services.',
       url: '/contact',
@@ -31,7 +31,7 @@ export default function Contact() {
   return (
     <>
       <GlobalLayout>
-        <ContactPage />
+        <WorkWithMePage />
       </GlobalLayout>
     </>
   );

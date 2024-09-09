@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalLayout from '@/components/GlobalLayout';
+import GlobalLayout from '@/components/common/GlobalLayout';
 import Home from '@/components/home/Homepage';
 import Script from 'next/script';
 import Link from 'next/link';

@@ -1,5 +1,6 @@
 import { Shrikhand } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 
 export const montserrat = Montserrat({
   subsets: ['latin'],
@@ -8,6 +9,11 @@ export const montserrat = Montserrat({
 
 export const shrikhand = Shrikhand({
   weight: '400',
+  display: 'swap',
+  subsets: ['latin'],
+});
+
+export const nunito = Nunito({
   display: 'swap',
   subsets: ['latin'],
 });

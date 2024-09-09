@@ -1,27 +1,25 @@
 import React from 'react';
-import { LetsConntect, FreeConstulation } from '../home/Form';
+import ImageWithTextSection from '../common/sections/ImageWithTextSection';
+import contactHeaderImage from './img/contact-header.png';
+import mobileHeaderImage from './img/contact-header-mobile.png';
 
 export default function ContactPage() {
   return (
-    <div className="bg-off-white dark:bg-soft-black mx-[auto] w-full flex items-center justify-center pb-[2rem]">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between w-full max-w-[85.75rem] md:mx-[1.5625rem] ">
-        <div className="mt-[30px] flex flex-col gap-[4rem] max-w-[500px] mx-[0.625rem]">
-          <LetsConntect />
-          <FreeConstulation />
-        </div>
-        <div
-          id="contact"
-          className="scroll-mt-[70px] w-full xl:w-1/2 flex justify-center pt-[4rem] lg:pt-[1rem]"
-        >
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfm7sDRHlovEUDxS12r0OT2LCYRHymJeQ8j894jljRzWop2YA/viewform?embedded=true"
-            width="640"
-            height="1048"
-          >
-            Loading…
-          </iframe>
-        </div>
-      </div>
+    <div className="block w-full bg-off-white">
+      <ImageWithTextSection
+        designSide="right"
+        topTitle="Let's Connect"
+        title="Start Your Project or Drop a Line"
+        paragraph="If you're ready to bring your project to life or just have a question, I'm here to help. Whether it's a new website, ongoing support, or any other inquiry, feel free to reach out. For all inquiries, you can also email me directly at contact@leighdahlin.com. I look forward to hearing from you!"
+        buttonText="Get in Touch"
+        imageSrc={contactHeaderImage}
+        imageSrcMobile={mobileHeaderImage}
+        imageAlt="Leggos on a soft back drop"
+        imageWidth={1350}
+        imageHeight={932}
+        imageClass={null}
+        buttonLink="/contact/#inquiryform"
+      />
     </div>
   );
 }
